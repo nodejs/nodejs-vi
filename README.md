@@ -3,16 +3,12 @@
 
 ## Twitter
 
-[@iojs_vi](https://twitter.com)
+[@iojs_vi](https://twitter.com/iojs_vi)
 
 ## Thành viên
 
 - Lê Hoàng ([@particle4dev](https://github.com/particle4dev))
 - Lê Thanh
-
-## Slack
-
-* [iojs-vi-slack]()
 
 ## Chạy locally
 
