@@ -10,6 +10,7 @@
 
 - Lê Hoàng ([@particle4dev](https://github.com/particle4dev))
 - Lê Thanh
+- Nguyễn Nhật Quang([@nhatquang238](https://github.com/nhatquang238))
 
 ## Chạy locally
 
