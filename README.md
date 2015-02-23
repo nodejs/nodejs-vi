@@ -21,6 +21,10 @@ Hãy theo dõi danh sách các [Issues](https://github.com/iojs/iojs-vi/issues) 
 
 ```
 git clone https://github.com/iojs/website.git
+cd website
+git remote add upstream https://github.com/iojs/iojs-vi.git
+git fetch upstream
+git merge upstream/master
 npm install -g gulp
 npm install
 ```
@@ -29,9 +33,8 @@ npm install
 
 ```
 gulp
-```
 Mở http://127.0.0.1:4657/vi/index.html
-
+```
 ## The MIT License (MIT)
 
 Copyright (c) 2015 - io.js
