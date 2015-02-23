@@ -12,6 +12,9 @@
 - Lê Thanh
 - Nguyễn Nhật Quang([@nhatquang238](https://github.com/nhatquang238))
 
+## Tham gia
+Hãy theo dõi danh sách các [Issues](https://github.com/iojs/iojs-vi/issues) hay mở mới issue và nói cho chúng tôi biết phần mà bạn muốn đóng góp. Chúng tôi sẽ thêm bạn vào team.
+
 ## Chạy locally
 
 ### Yêu cầu
