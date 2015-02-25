@@ -1,10 +1,9 @@
-# ES6 on io.js
+# ES6 trên io.js
+io.js được phát triển đối với các phiên bản hiện tại của [V8](https://code.google.com/p/v8/).Bằng cách giữ cập nhật hàng ngày với các phiên bản mới nhất của công cụ này, chúng tôi đảm bảo các tính năng mới đến từ [JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) sẽ được đem đến cho các nhà  phát triển io.js một cách kịp thời, cũng như tiếp tục các cải tiến về hiệu suất và tính ổn định.
 
-io.js is built against modern versions of [V8](https://code.google.com/p/v8/). By keeping up-to-date with the latest releases of this engine we ensure new features from the [JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) are brought to io.js developers in a timely manner, as well as continued performance and stability improvements.
+Phiên bản 1.3.0 của io.js được xếp với V8 4.1.0.14 , bao gồm các tính năng của E6 vượt xa phiên bản 3.28.73 được xếp với Node.js™ 0.12.x.
 
-Version 1.3.0 of io.js ships with V8 4.1.0.14, which includes ES6 features well beyond version 3.28.73 that ship with Node.js™ 0.12.x.
-
-## No more --harmony flag
+## Không có thêm --hamorny flag
 
 On Node.js™@0.12.x (V8 3.28+), the `--harmony` runtime flag enables all **completed**, **staged** and **in progress** ES6 features together, in bulk (with the exception of `proxies` which are hidden under `--harmony-proxies`). This means that some really buggy or even broken features like [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) are just as readily available for developers as [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), which have very little or even no known-issues. As such, most developers tend to enable only certain features by using specific runtime harmony feature flags (e.g. `--harmony-generators`), or simply enable all of them and then use a restricted subset.
 
