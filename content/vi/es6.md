@@ -1,5 +1,5 @@
 # ES6 trên io.js
-io.js được xây dựng với các phiên bản mới nhất của V8.Bằng cách cập nhật liên tục các phiên bản mới của engine này, chúng tôi đảm bảo các tính năng mới đến từ JavaScript ECMA-262 specification sẽ được cung cấp đến cho các nhà phát triển io.js một cách kịp thời, cũng như tiếp tục các cải tiến về hiệu suất và tính ổn định.
+io.js được xây dựng với các phiên bản mới nhất của [V8](https://code.google.com/p/v8/).Bằng cách cập nhật liên tục các phiên bản mới của engine này, chúng tôi đảm bảo các tính năng mới đến từ [JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) sẽ được cung cấp đến cho các nhà phát triển io.js một cách kịp thời, cũng như tiếp tục các cải tiến về hiệu suất và tính ổn định.
 
 Phiên bản 1.3.0 của io.js được phát hành cùng với V8 4.1.0.14 , bao gồm các tính năng của ES6 vượt xa phiên bản 3.28.73 được phát hành cùng với Node.js™ 0.12.x.
 
