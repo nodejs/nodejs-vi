@@ -3,9 +3,8 @@ io.js được xây dựng với các phiên bản mới nhất của [V8](https
 
 Phiên bản 1.3.0 của io.js được phát hành cùng với V8 4.1.0.14 , bao gồm các tính năng của ES6 vượt xa phiên bản 3.28.73 được phát hành cùng với Node.js™ 0.12.x.
 
-## Không cần sử dụng --hamorny flag
-
-On Node.js™@0.12.x (V8 3.28+), the `--harmony` runtime flag enables all **completed**, **staged** and **in progress** ES6 features together, in bulk (with the exception of `proxies` which are hidden under `--harmony-proxies`). This means that some really buggy or even broken features like [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) are just as readily available for developers as [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), which have very little or even no known-issues. As such, most developers tend to enable only certain features by using specific runtime harmony feature flags (e.g. `--harmony-generators`), or simply enable all of them and then use a restricted subset.
+## Không cần sử dụng --harmony flag
+Node.js™@0.12.x (V8 3.28+), runtime flag --harmony cho phép các tính năng của ES6 cùng là completed, staged, in progress và với số lượng lớn (với ngoại lệ của các proxy được ẩn dưới các proxy --harmony). Điều này có nghĩa là một số tính năng đã bị lỗi hoăc thậm chí bị hỏng giống như [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) chi có sẵn cho các nhà phát triển như là [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), mà trong đó có rất ít hoặc thậm chí không biết các vấn đề. Như vậy, hầu hết các nhà phát triển có xu hướng chỉ kích hoạt tính năng nhất định bằng cách sử dụng cụ thể tính năng của runtime flag harmony (ví dụ --harmony-generators), hoặc đơn giản cho phép tất cả và sự dụng một tập hợp con bị hạn chế.
 
 With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for **shipping**, **staged** and **in progress** features:
 
