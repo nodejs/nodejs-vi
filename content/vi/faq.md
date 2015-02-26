@@ -29,4 +29,4 @@ Có 1 kênh #io.js trên Freenode IRC. Chúng tôi giữ các bản logs của k
 
 ## Quản lý mã nguồn mở là gì?
 
-Quản lý mã nguồn mở là viêc ủng hộ ứng dụng các triết lý mã nguồn mở và phong trào nội dung mở để cho phép bất cứ ai quan tâm đều có thể tham gia đóng góp tạo sản phẩm cuối cùng như với tài liệu wiki. Các quy tắc được áp dụng cho tất cả mọi người tham gia,các quyết định được đưa ra bằng cách thu thập các ý kiến của nhiều người. [[source]](https://en.wikipedia.org/wiki/Open-source_governance)
+Quản lý mã nguồn mở là việc ủng hộ ứng dụng các triết lý mã nguồn mở và phong trào nội dung mở để cho phép bất cứ ai quan tâm đều có thể tham gia đóng góp tạo sản phẩm cuối cùng như với tài liệu wiki. Các quy tắc được áp dụng cho tất cả mọi người tham gia,các quyết định được đưa ra bằng cách thu thập các ý kiến của nhiều người. [[source]](https://en.wikipedia.org/wiki/Open-source_governance)
