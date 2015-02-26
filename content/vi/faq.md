@@ -17,7 +17,7 @@ io.js đã chuyển sang sử dụng [Semver](http://semver.org/) và những th
 [CHANGELOG](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) cho phiên bản v1.x sẽ cũng cấp [tóm tắt những thay đổi từ Node.js v0.10.35 đến io.js v1.0.x](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#summary-of-changes-from-nodejs-v01035-to-iojs-v100).
 
 ## Làm cách nào để tôi đóng góp ?
-Tất cả mọi người đều có thể giúp io.js bằng cách [tuân thủ theo quy tắc ứng sử](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), và những contributions, releases, và contributorship đều dưới sự thông qua của [1 mô hình quản lý mở](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme).
+Tất cả mọi người đều có thể giúp io.js bằng cách [tuân thủ theo quy tắc ứng xử](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-of-conduct), và những contributions, releases, và contributorship đều dưới sự thông qua của [1 mô hình quản lý mở](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme).
 
 Để bắt đầu, hãy xem [những thảo luận mở trên GitHub ](https://github.com/iojs/io.js/issues), chúng tôi sẽ rất cảm kích khi nhận được những phản hồi của bạn. Tham gia thảo luận sẽ là cách tốt nhất để bạn biết nơi bạn có thể đóng góp. Nếu như có điều gì đó mà bạn có thể thấy mình đảm nhận được, hãy tạo [1 pull request](https://github.com/iojs/io.js/blob/v1.x/CONTRIBUTING.md#code-contributions).
 
