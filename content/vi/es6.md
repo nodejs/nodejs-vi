@@ -8,12 +8,19 @@ Node.js™@0.12.x (V8 3.28+), runtime flag --harmony cho phép các tính năng 
 
 With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for **shipping**, **staged** and **in progress** features:
 
+Với [io.js@1.x](mailto:io.js@1.x) (V8 4.1+), tất cả những sự phức tạp đã ra đi. Tất cả các tính năng của harmony đã được chia một cách logic vào 3 nhóm các tính năng là shipping, staged và in progress:
+
 *   All **shipping** features, the ones that V8 has considered stable, like [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [new string methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) and many others are turned **on by default on io.js** and do **NOT** require any kind of runtime flag.
 *   Then there are **staged** features which are almost-completed features that haven't been completely tested or updated to the latest spec yet and therefore are not considered stable by the V8 team (e.g. there might be some edge cases left to discover). This is probably the equivalent of the state of [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) on 3.26. These are the "use at your own risk" type of features that now require a runtime flag: `--es_staging` (or its synonym, `--harmony`).
 *   Finally, all **in progress** features can be activated individually by their respective harmony flag (e.g. `--harmony_arrow_functions`), although this is highly discouraged unless for testing purposes.
 
-## Which ES6 features ship with io.js by default (no runtime flag required)?
+*	Các tính năng **shipping**, một trong những tính năng mà V8 đã coi là ổn định, như [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), [templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings), [new string methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla#Additions_to_the_String_object) và các tính năng khác được bật theo mặc định trên io.js và không đòi hỏi bất kỳ flag runtime nào.
+*	Tiếp theo, các tính năng **staged**, đó là các tính năng gần như hoàn thành, chưa được hoàn toàn kiểm tra và cập nhật các thông số mới nhất, do đó chưa được coi là ổn định bởi team V8 (ví dụ, ở đây có thể là một số trường hợp còn lại để khám phá). Có lẽ sẽ tương đương với trạng thái của [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) trong 3.26 . Đó là kiểu "sử dụng các nguy cơ của riêng bạn" của các tính năng mà hiện tại đã yêu cầu flag runtime: --es_staging (hoặc đồng nghĩa với nó, --harmony).
+*	Cuối cùng, các tính năng **in progress** có thể được kích hoạt bằng cách riêng của chúng(ví dụ --harmony_arrow_functions) , mặc dù điều này được khuyến khích trừ khi cho mục đích thử nghiệm .
 
+
+## Which ES6 features ship with io.js by default (no runtime flag required)?
+## Các tính năng nào của ES6 được phát hành cùng với io.js theo mặc định(không có flag runtime được yêu cầu)?
 
 *   Block scoping
 
