@@ -1,14 +1,23 @@
 # FAQ
 
 ## What is io.js?
+## io.js là gì?
 
 [io.js](https://github.com/iojs/io.js) is a JavaScript platform built on [Chrome's V8 runtime](http://code.google.com/p/v8/). This project began as a fork of [Joyent's Node.js™](https://nodejs.org/) and is compatible with the [npm](https://www.npmjs.org/) ecosystem.
 
-## Why? 
+[io.js](https://github.com/iojs/io.js) là 1 nền tảng JavaScript được xây dựng dựa trên [Chrome's V8 runtime](http://code.google.com/p/v8/).
+Dự án này đã bắt đầu như là 1 phiên bản fork của [Joyent's Node.js™](https://nodejs.org/) và được tương thích với hệ thống [npm](https://www.npmjs.org/).
 
+## Why?
+## Tại sao?
 io.js aims to provide faster and predictable release cycles. It currently merges in the latest language, API and performance improvements to V8 while also updating libuv and other base libraries.
 
+Mục đích của io.js là cung cấp nhanh hơn và dễ dự đoán hơn phiên bản phát hành. Phiên bản hiện tại
+API và hiệu xuất được cải thiện với V8 đồng thời cũng cập nhật libuv và các bộ thư viện cơ bản khác. ??????
+
 This project aims to continue development of io.js under an "[open governance model](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)" as opposed to corporate stewardship.
+
+Project sẽ được tiếp tục phát triển dưới 1 "[open governance model](https://github.com/iojs/io.js/blob/v1.x/GOVERNANCE.md#readme)" thay vì được quản lý bởi 1 công ty.
 
 ## Version 1.0.x?
 
