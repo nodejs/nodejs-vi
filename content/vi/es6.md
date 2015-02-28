@@ -1,9 +1,21 @@
+# ES6 on io.js
+
 # ES6 trên io.js
+
+io.js is built against modern versions of [V8](https://code.google.com/p/v8/). By keeping up-to-date with the latest releases of this engine we ensure new features from the [JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) are brought to io.js developers in a timely manner, as well as continued performance and stability improvements.
+
 io.js được xây dựng với các phiên bản mới nhất của [V8](https://code.google.com/p/v8/).Bằng cách cập nhật liên tục các phiên bản mới của engine này, chúng tôi đảm bảo các tính năng mới đến từ [JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) sẽ được cung cấp đến cho các nhà phát triển io.js một cách kịp thời, cũng như tiếp tục các cải tiến về hiệu suất và tính ổn định.
+
+Version 1.4.1 of io.js ships with V8 4.1.0.21, which includes ES6 features well beyond version 3.28.73 that ship with Node.js™ 0.12.x.
 
 Phiên bản 1.3.0 của io.js được phát hành cùng với V8 4.1.0.14 , bao gồm các tính năng của ES6 vượt xa phiên bản 3.28.73 được phát hành cùng với Node.js™ 0.12.x.
 
+## No more --harmony flag
+
 ## Không cần sử dụng --harmony flag
+
+On Node.jsâ¢@0.12.x (V8 3.28+), the `--harmony` runtime flag enables all **completed**, **staged** and **in progress** ES6 features together, in bulk (with the exception of `proxies` which are hidden under `--harmony-proxies`). This means that some really buggy or even broken features like [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) are just as readily available for developers as [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), which have very little or even no known-issues. As such, most developers tend to enable only certain features by using specific runtime harmony feature flags (e.g. `--harmony-generators`), or simply enable all of them and then use a restricted subset.
+
 Node.js™@0.12.x (V8 3.28+), runtime flag --harmony cho phép các tính năng của ES6 cùng là completed, staged, in progress và với số lượng lớn (với ngoại lệ của các proxy được ẩn dưới các proxy --harmony). Điều này có nghĩa là một số tính năng đã bị lỗi hoăc thậm chí bị hỏng giống như [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) chi có sẵn cho các nhà phát triển như là [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*), mà trong đó có rất ít hoặc thậm chí không biết các vấn đề. Như vậy, hầu hết các nhà phát triển có xu hướng chỉ kích hoạt tính năng nhất định bằng cách sử dụng cụ thể tính năng của runtime flag harmony (ví dụ --harmony-generators), hoặc đơn giản cho phép tất cả và sự dụng một tập hợp con bị hạn chế.
 
 With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features are now logically split into three groups for **shipping**, **staged** and **in progress** features:
@@ -13,6 +25,8 @@ With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features ar
 *   Finally, all **in progress** features can be activated individually by their respective harmony flag (e.g. `--harmony_arrow_functions`), although this is highly discouraged unless for testing purposes.
 
 ## Which ES6 features ship with io.js by default (no runtime flag required)?
+
+## Tính năng nào của ES6 được đi kèm với io.js theo mặc định (không yêu cầu runtime flag)
 
 
 *   Block scoping
@@ -49,7 +63,11 @@ With io.js@1.x (V8 4.1+), all that complexity goes away. All harmony features ar
 
 You can view a more detailed list, including a comparison with other engines, on the [compat-table](https://kangax.github.io/compat-table/es6/) project page.
 
+Bạn có thể xem thông tin đầy đủ hơn ở đây, bao gồm việc so sánh với các engines khác, trên 1 dự án [compat-table](https://kangax.github.io/compat-table/es6/).
+
 ## Which ES6 features are behind the --es_staging flag?
+
+## Những tính năng nào của ES6 được bật với --es_staging flag ?
 
 *   [Classes](https://github.com/lukehoban/es6features#classes) (strict mode only, behind flag `--harmony_classes` which implies block scoping & object literal extensions)
 
@@ -59,7 +77,11 @@ You can view a more detailed list, including a comparison with other engines, on
 
 ## Which ES6 features are in progress?
 
+## Những tính năng nào của ES6 đang được phát triển ?
+
 New features are constantly being added to the V8 engine. Generally speaking, expect them to land on a future io.js release, although timing is unknown.
+
+Những tính năng mới đang được liên tục thêm vào trong V8 engine. Nói chung chúng ta sẽ mong đợi chúng ở các phiên bản tiếp theo của io.js, tuy thời gian là không xác định.
 
 You may list all the *in progress* features available on each io.js release by grepping through the `--v8-options` argument. Please note that these are incomplete and possibly broken features of V8, so use them at your own risk:
 
