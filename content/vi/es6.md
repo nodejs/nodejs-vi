@@ -29,7 +29,7 @@ Với [io.js@1.x](mailto:io.js@1.x) (V8 4.1+), tất cả những sự phức t�
 
     >As of v8 3.31.74.1, block-scoped declarations are [intentionally implemented with a non-compliant limitation to strict mode code](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Developers should be aware that this will change as v8 continues towards ES6 specification compliance.
 
-    >Với V8 3.31.74.1, block-scoped được khai báo [cố ý thực hiện với một giới hạn không tuân thủ strict mode code](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Các lập trình viên cần phải lưu ý rằng điều này sẽ thay đổi nếu V8 vẫn tiếp tục thay đổi để gần với các đặc tả của ES6.
+    >Với V8 3.31.74.1, khai báo block-scoped được [cố ý thực hiện với một non-compliant limitation với chế độ strict mode code](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Các lập trình viên cần phải lưu ý rằng điều này sẽ thay đổi nếu V8 vẫn tiếp tục thay đổi để gần với các đặc tả của ES6.
 
 
 *   Collections
