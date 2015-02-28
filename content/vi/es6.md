@@ -45,6 +45,8 @@ Với [io.js@1.x](mailto:io.js@1.x) (V8 4.1+), tất cả những sự phức t�
     *   `function`-in-blocks
 
     >As of v8 3.31.74.1, block-scoped declarations are [intentionally implemented with a non-compliant limitation to strict mode code](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Developers should be aware that this will change as v8 continues towards ES6 specification compliance.
+    >Trong V8 3.31.74.1, block-scoped được khai báo [cố ý thực hiện với một giới hạn không tuân thủ strict mode code](https://groups.google.com/forum/#!topic/v8-users/3UXNCkAU8Es). Các nhà phát triển cần phải nhận thức rằng điều này sẽ thay đổi khi V8 vẫn tiếp tục tuân thủ các đặc tả của ES6.
+
 
 *   Collections
 
@@ -91,6 +93,8 @@ New features are constantly being added to the V8 engine. Generally speaking, ex
 Những tính năng mới đang được liên tục thêm vào trong V8 engine. Nói chung chúng ta sẽ mong đợi chúng ở các phiên bản tiếp theo của io.js, tuy thời gian là không xác định.
 
 You may list all the *in progress* features available on each io.js release by grepping through the `--v8-options` argument. Please note that these are incomplete and possibly broken features of V8, so use them at your own risk:
+
+Bạn có thể liệt kê tất cả các tính năng đang phát triển có sẵn trên mỗi phiên bản của V8 được grepping qua argument --v8-options. Xin lưu ý đây là những tính năng không đầy đủ và có thể bị  của V8, nên sử dụng chúng tại your own risk:
 
 ```sh
 iojs --v8-options | grep "in progress"
