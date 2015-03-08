@@ -32,9 +32,10 @@ npm install
 ### Chạy
 
 ```
-gulp
+npm run gulp develop
 Mở http://127.0.0.1:4657/vi/index.html
 ```
+Chú ý: Dự án phải được chạy với io.js hỗ trợ [ES6 style strings](https://github.com/iojs/website/pull/258#issuecomment-77204208).
 ## The MIT License (MIT)
 
 Copyright (c) 2015 - io.js
