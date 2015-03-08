@@ -1,5 +1,7 @@
 Every Friday we're going to start posting weekly updates of the activity in and around the project. I'll kick off a new issue each week and we can comment and collaboratively edit it before publication.
 
+Vào mỗi thứ 6 hàng tuần,
+
 # io.js in the week of February 6th 2015
 
 We looked back at all the contributions in January and found that this is the 3rd most active month in Node history (294 commits) and the single most active month in almost three years (308 commits in February 2012). With the contribution growth we've seen so far we expect February to be even more active.
