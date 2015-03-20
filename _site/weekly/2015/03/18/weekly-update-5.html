@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>weekly-update 2015-03-06</title>
+    
+    <meta name="description" content="io.js 1.5.0 Release">
+    
+    <meta name="author" content="iojs-vi">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+    <nav class="navbar navbar-default visible-xs" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a type="button" class="navbar-toggle nav-link" href="http://github.com/iojs">
+                <i class="fa fa-github"></i>
+            </a>
+            
+            
+            <a type="button" class="navbar-toggle nav-link" href="http://twitter.com/iojs_vi">
+                <i class="fa fa-twitter"></i>
+            </a>
+            
+            
+            <a type="button" class="navbar-toggle nav-link" href="mailto:iojs-vi@gmail.com">
+                <i class="fa fa-envelope"></i>
+            </a>
+            
+            <a class="navbar-brand" href="/">
+                <!--
+                <img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=35" class="img-circle" />-->
+                <img width="35" src="/assets/ico/W9ics_VG.png" class="img-circle" />
+                
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/categories.html">Categories</a></li>
+                <li><a href="/tags.html">Tags</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <!-- nav-menu-dropdown -->
+    <div class="btn-group hidden-xs" id="nav-menu">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+            <li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+        </ul>
+    </div>
+
+    <div class="col-sm-3 sidebar hidden-xs"
+    style='background: url("/assets/ico/bg.png") repeat;'>
+        <! -- sidebar.html -->
+<header class="sidebar-header" role="banner">
+    <a href="/">
+        <!--<img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=150" class="img-circle" />-->
+        <img width="150" src="/assets/ico/W9ics_VG.png" class="img-circle" />
+    </a>
+    <h3 class="title">
+        <a href="/"></a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+    Bringing ES6 to the Node Community in Vietnam!
+</div>
+
+
+<div id="contact-list" class="text-center">
+    <ul class="list-unstyled list-inline">
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="https://github.com/iojs">
+                <i class="fa fa-github-alt fa-lg"></i>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="https://twitter.com/iojs_vi">
+                <i class="fa fa-twitter fa-lg"></i>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="mailto:iojs-vi@gmail.com">
+                <i class="fa fa-envelope fa-lg"></i>
+            </a>
+        </li>
+        
+    </ul>
+    <ul id="contact-list-secondary" class="list-unstyled list-inline">
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="https://pinterest.com/iojs_vi">
+                <i class="fa fa-pinterest fa-lg"></i>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="https://linkedin.com/pub/iojs_vi">
+                <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+        </li>
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="/feed.xml">
+                <i class="fa fa-rss fa-lg"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+<! -- sidebar.html end -->
+
+    </div>
+
+    <div class="col-sm-9 col-sm-offset-3">
+        <div class="page-header">
+  <h1>weekly-update 2015-03-06 </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   March 
+	   18th,
+	   
+	   2015
+	 </span>
+	  <div class="article_body">
+	  <h1 id="iojs-150-release">io.js 1.5.0 Release</h1>
+
+<p>On Friday, March 6th, <a href="https://github.com/rvagg">@rvagg</a> released io.js <a href="https://iojs.org/dist/latest/"><strong>v1.5.0</strong></a>.  The complete change log can be found <a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md">on GitHub</a>.</p>
+
+<h3 id="notable-changes">Notable changes</h3>
+
+<ul>
+  <li><strong>buffer</strong>: New <code>Buffer#indexOf()</code> method, modelled off <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"><code>Array#indexOf()</code></a>. Accepts a String, Buffer or a Number. Strings are interpreted as UTF8. (Trevor Norris) <a href="https://github.com/iojs/io.js/pull/561">#561</a></li>
+  <li><strong>fs</strong>: <code>options</code> object properties in <code>'fs'</code> methods no longer perform a <code>hasOwnProperty()</code> check, thereby allowing options objects to have prototype properties that apply. (Jonathan Ong) <a href="https://github.com/iojs/io.js/pull/635">#635</a></li>
+  <li><strong>tls</strong>: A likely TLS memory leak was reported by PayPal. Some of the recent changes in <strong>stream_wrap</strong> appear to be to blame. The initial fix is in <a href="https://github.com/iojs/io.js/pull/1078">#1078</a>, you can track the progress toward closing the leak at <a href="https://github.com/iojs/io.js/issues/1075">#1075</a> (Fedor Indutny).</li>
+  <li><strong>npm</strong>: Upgrade npm to 2.7.0. See <a href="https://github.com/npm/npm/blob/master/CHANGELOG.md#v270-2015-02-26">npm CHANGELOG.md</a> for details including why this is a semver-minor when it could have been semver-major.</li>
+  <li><strong>TC</strong>: Colin Ihrig (@cjihrig) resigned from the TC due to his desire to do more code and fewer meetings.</li>
+</ul>
+
+<h3 id="known-issues">Known issues</h3>
+
+<ul>
+  <li>Possible TLS-related memory leak, details at <a href="https://github.com/iojs/io.js/issues/1075">#1075</a>.</li>
+  <li>Windows still reports some minor test failures and we are continuing to address all of these as a priority. See <a href="https://github.com/iojs/io.js/issues/1005">#1005</a>.</li>
+  <li>Surrogate pair in REPL can freeze terminal <a href="https://github.com/iojs/io.js/issues/690">#690</a></li>
+  <li>Not possible to build io.js as a static library <a href="https://github.com/iojs/io.js/issues/686">#686</a></li>
+  <li><code>process.send()</code> is not synchronous as the docs suggest, a regression introduced in 1.0.2, see <a href="https://github.com/iojs/io.js/issues/760">#760</a> and fix in <a href="https://github.com/iojs/io.js/issues/774">#774</a></li>
+</ul>
+
+<h1 id="community-updates">Community Updates</h1>
+
+<ul>
+  <li>
+    <p>You can relax knowing that io.js and latest node.js <a href="https://strongloop.com/strongblog/are-node-and-io-js-affected-by-the-freak-attack-openssl-vulnerability/"><strong>are not affected</strong></a> by the <a href="https://freakattack.com/">FREAK Attack</a>.  You are running io.js or the latest version of node.js, right?</p>
+  </li>
+  <li>Walmart is now sponsoring a build machine for the io.js Jenkins CI system.  The @iojs/build team is working on creating io.js SunOS binaries (like you can get from nodejs.org).  A V8 fix (<a href="https://github.com/iojs/io.js/pull/1079">iojs/io.js#1079</a>) needs to be landed first before more progress can be made.</li>
+  <li>We would also like to thank the following companies for contributing hardware and related technology/support/engineering for io.js builds:
+    <ul>
+      <li><strong>Digital Ocean</strong> (mainly Linux)</li>
+      <li><strong>Rackspace</strong> (mainly Windows)</li>
+      <li><strong>Voxer</strong> (OS X and FreeBSD)</li>
+      <li><strong>NodeSource</strong> (ARMv6 &amp; ARMv7)</li>
+      <li><strong>Linaro</strong> (ARMv8)</li>
+      <li><strong>Walmart</strong> (SmartOS / Solaris)</li>
+    </ul>
+  </li>
+  <li>The io.js community has been hard at work on the internationalization of all of its content.  There are now over 20 active languages published on <a href="http://iojs.org">iojs.org</a> and i18n community sites.  Additionally, i18n links (<a href="https://github.com/iojs/website/pull/258">iojs/website#258</a>) have been added to the website footer for easy access.  Are we missing your language?  <a href="https://github.com/iojs/website/blob/master/TRANSLATION.md">Help us add it!</a></li>
+  <li>
+    <p>Speaking of translations, the <a href="http://roadmap.iojs.org/">io.js roadmap presentation</a> has been updated to link to other language versions.</p>
+  </li>
+  <li>
+    <p>It seems that <strong>PayPal</strong> is running an experiment comparing <a href="https://www.npmjs.com/package/kappa">Kappa</a>  on io.js vs node.js 0.12 vs node.js v0.10.  The PayPal team identified a likely TLS memory leak. Initial fix is in <a href="https://github.com/iojs/io.js/pull/1078">#1078</a> and progress towards closing is in <a href="https://github.com/iojs/io.js/issues/1075">#1075</a></p>
+  </li>
+  <li><a href="http://nodesource.com"><strong>NodeSource</strong></a> is now providing io.js <a href="https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories">Linux binary</a> packages for Ubuntu/Debian as well as RHEL/Fedora distributions.</li>
+  <li>
+    <p>The io.js <a href="https://registry.hub.docker.com/u/library/iojs/">Docker build</a> is one of thirteen new <a href="http://blog.docker.com/2015/03/thirteen-new-official-repositories-added-in-january-and-february/">official Docker repositories</a> added in January and February.</p>
+  </li>
+  <li>NodeBots and IoT people should be happy to hear that the just-announced <a href="http://blog.technical.io/post/112787427217/tessel-2-new-hardware-for-the-tessel-ecosystem"><strong>Tessel2</strong></a> runs <a href="http://blog.technical.io/post/112888410737/moving-faster-with-io-js">io.js natively</a>.</li>
+  <li>
+    <p><a href="https://twitter.com/maxbeatty"><strong>@maxbeatty</strong></a> is working on a new version of the <a href="http://jsperf.com/">jsperf.com</a> backend, running on io.js and it is entirely <a href="https://github.com/jsperf/jsperf.com">open source</a>.  Contributions are welcome!</p>
+  </li>
+  <li><a href="https://twitter.com/eranhammer">@eranhammer</a> wrote a blog post called <a href="http://hueniverse.com/2015/03/02/the-node-version-dilemma/">The Node Version Dilemma</a> which discusses the various node.js / io.js versions and proposes which ones to use and when to use them.</li>
+</ul>
+
+<h1 id="iojs-support-added">io.js Support Added</h1>
+
+<ul>
+  <li><strong><a href="https://npmjs.com/scrypt">scrypt</a></strong> now supports io.js. Learn more from this <a href="https://github.com/barrysteyn/node-scrypt/issues/39">GitHub issue</a></li>
+  <li><strong><a href="https://github.com/thlorenz/proxyquire">proxyquire</a></strong> v1.3.2 published with support for iojs.</li>
+</ul>
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#weekly-ref">
+					weekly <span>(6)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		
+		<ul class="list-inline">
+		  <li><i class="fa fa-tags"></i></li>
+		  
+		  
+			 
+				<li>
+					<a href="/tags.html#weekly-ref">
+					weekly <span>(6)</span>
+					,
+					</a>
+				</li>
+			 
+				<li>
+					<a href="/tags.html#draft-ref">
+					draft <span>(2)</span>
+					
+					</a>
+				</li>
+			
+		  
+		  
+		</ul>
+		  
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=weekly-update 2015-03-06&via=iojs_vi"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <!--
+        	<img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa" class="img-rounded author-image" />
+        -->
+        	<img width="80" src="/assets/ico/W9ics_VG.png" class="img-rounded author-image" />
+        <h4 class="section-title author-name">iojs-vi</h4>
+        <p class="author-bio">Bringing ES6 to the Node Community in Vietnam!</p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/weekly/2015/03/18/weekly-update-4.html" title="weekly-update 2015-02-27">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/weekly/2015/03/19/weekly-update.html" title="weekly update 2015-03-13">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+        <footer>
+            <hr/>
+            <p>
+                &copy; 2015 iojs-vi with Jekyll. Theme base on <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+            </p>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+

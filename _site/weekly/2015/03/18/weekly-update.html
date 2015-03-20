@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>weekly update 2015-02-06</title>
+    
+    <meta name="description" content="Vào mỗi thứ 6, chúng tôi sẽ bắt đầu đăng các cập nhật hàng tuần về các hoạt động bên trong và xung quanh dự án. Tôi sẽ tạo ra 1 issue mới mỗi tuần để mọi người có thể bình luận và đóng góp trước khi bài viết được xuất bản.">
+    
+    <meta name="author" content="iojs-vi">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+    <nav class="navbar navbar-default visible-xs" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a type="button" class="navbar-toggle nav-link" href="http://github.com/iojs">
+                <i class="fa fa-github"></i>
+            </a>
+            
+            
+            <a type="button" class="navbar-toggle nav-link" href="http://twitter.com/iojs_vi">
+                <i class="fa fa-twitter"></i>
+            </a>
+            
+            
+            <a type="button" class="navbar-toggle nav-link" href="mailto:iojs-vi@gmail.com">
+                <i class="fa fa-envelope"></i>
+            </a>
+            
+            <a class="navbar-brand" href="/">
+                <!--
+                <img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=35" class="img-circle" />-->
+                <img width="35" src="/assets/ico/W9ics_VG.png" class="img-circle" />
+                
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/categories.html">Categories</a></li>
+                <li><a href="/tags.html">Tags</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <!-- nav-menu-dropdown -->
+    <div class="btn-group hidden-xs" id="nav-menu">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+            <li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+        </ul>
+    </div>
+
+    <div class="col-sm-3 sidebar hidden-xs"
+    style='background: url("/assets/ico/bg.png") repeat;'>
+        <! -- sidebar.html -->
+<header class="sidebar-header" role="banner">
+    <a href="/">
+        <!--<img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=150" class="img-circle" />-->
+        <img width="150" src="/assets/ico/W9ics_VG.png" class="img-circle" />
+    </a>
+    <h3 class="title">
+        <a href="/"></a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+    Bringing ES6 to the Node Community in Vietnam!
+</div>
+
+
+<div id="contact-list" class="text-center">
+    <ul class="list-unstyled list-inline">
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="https://github.com/iojs">
+                <i class="fa fa-github-alt fa-lg"></i>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="https://twitter.com/iojs_vi">
+                <i class="fa fa-twitter fa-lg"></i>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="mailto:iojs-vi@gmail.com">
+                <i class="fa fa-envelope fa-lg"></i>
+            </a>
+        </li>
+        
+    </ul>
+    <ul id="contact-list-secondary" class="list-unstyled list-inline">
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="https://pinterest.com/iojs_vi">
+                <i class="fa fa-pinterest fa-lg"></i>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="https://linkedin.com/pub/iojs_vi">
+                <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+        </li>
+        
+        <li>
+            <a class="btn btn-default btn-sm" href="/feed.xml">
+                <i class="fa fa-rss fa-lg"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+<! -- sidebar.html end -->
+
+    </div>
+
+    <div class="col-sm-9 col-sm-offset-3">
+        <div class="page-header">
+  <h1>weekly update 2015-02-06 </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   March 
+	   18th,
+	   
+	   2015
+	 </span>
+	  <div class="article_body">
+	  <p>Vào mỗi thứ 6, chúng tôi sẽ bắt đầu đăng các cập nhật hàng tuần về các hoạt động bên trong và xung quanh dự án. Tôi sẽ tạo ra 1 issue mới mỗi tuần để mọi người có thể bình luận và đóng góp trước khi bài viết được xuất bản.</p>
+
+<h1 id="iojs-06-02-2015">io.js 06-02-2015</h1>
+
+<p>Khi nhìn lại tất cả các đóng góp trong Tháng 1, chúng ta sẽ nhận ra đây là 1 trong 3 tháng có nhiều hoạt động nhất trong lịch sử Node (294 commits) và là tháng có nhiều hoạt động nhất trong 3 năm qua (308 commits trong Tháng 2 2012). Và Tháng 2, chúng ta có thể hi vọng sẽ còn nhiều hoạt động hơn thế.</p>
+
+<ul>
+  <li>
+    <p>Phát hành 1.1.0. https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#2015-02-03-version-110-chrisdickinson</p>
+  </li>
+  <li>
+    <p>Đơn giản hóa khởi tạo Stream https://github.com/iojs/io.js/commit/50daee7243a3f987e1a28d93c43f913471d6885a</p>
+  </li>
+  <li>
+    <p>io.js bổ sung hỗ trợ Travis CI http://docs.travis-ci.com/user/build-environment-updates/2015-02-03/</p>
+  </li>
+  <li>
+    <p>codeship hỗ trợ io.js https://codeship.com/documentation/languages/nodejs/#iojs</p>
+  </li>
+  <li>
+    <p>Atom Editor chuyển qua sử dụng io.js. https://github.com/atom/atom/releases/tag/v0.177.0</p>
+  </li>
+  <li>
+    <p>nw.js (trước đây là node-webkit) chuyển qua sử dụng io.js https://github.com/nwjs/nw.js/issues/2742</p>
+  </li>
+  <li>
+    <p>Phần cứng mới của Tessel sẽ hỗ trợ io.js http://blog.technical.io/post/110115579867/upcoming-hardware-from-technical-machine</p>
+  </li>
+  <li>
+    <p>Chris Dickinson thêm 6 thành viên mới, nâng tổng số thành viên hoạt động lên 23. https://github.com/iojs/io.js/issues/680#issuecomment-73089691</p>
+  </li>
+  <li>
+    <p>WIP: Chính sách về sự ổn định và tương thích https://github.com/iojs/io.js/issues/725</p>
+  </li>
+  <li>
+    <p>TC Meeting Highlights</p>
+  </li>
+  <li>
+    <p>Website Working Group Highlights</p>
+  </li>
+  <li>
+    <p>First Tracing Working Group Meeting</p>
+  </li>
+  <li>
+    <p>Chúng tôi bắt đầu tiếp cận các công ty để thu thập cách phản hồi về roadmap. https://github.com/iojs/roadmap/issues/13 Nếu chúng tôi thiếu xót bất cứ công ty nào, xin hãy để lại thông tin liên lạc lên GitHub Issue.</p>
+  </li>
+  <li>
+    <p>Tuần tới là Node Summit w/ rất nhiều thành viên io.js sẽ tham dự và phát biểu. Bert Belder, Thorsten Lorenz, Isaac Schlueter.</p>
+  </li>
+</ul>
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#weekly-ref">
+					weekly <span>(6)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		
+		<ul class="list-inline">
+		  <li><i class="fa fa-tags"></i></li>
+		  
+		  
+			 
+				<li>
+					<a href="/tags.html#weekly-ref">
+					weekly <span>(6)</span>
+					
+					</a>
+				</li>
+			
+		  
+		  
+		</ul>
+		  
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=weekly update 2015-02-06&via=iojs_vi"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <!--
+        	<img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa" class="img-rounded author-image" />
+        -->
+        	<img width="80" src="/assets/ico/W9ics_VG.png" class="img-rounded author-image" />
+        <h4 class="section-title author-name">iojs-vi</h4>
+        <p class="author-bio">Bringing ES6 to the Node Community in Vietnam!</p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/general/io.js/2015/03/17/hello-world.html" title="FAQ">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/weekly/2015/03/18/weekly-update-2.html" title="weekly update 2015-02-13">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+        <footer>
+            <hr/>
+            <p>
+                &copy; 2015 iojs-vi with Jekyll. Theme base on <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+            </p>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
