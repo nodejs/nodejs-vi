@@ -1,7 +1,7 @@
 ---
 layout: post
 title: weekly update 2015-03-20
-categories: [draft, weekly]
+categories: [weekly]
 tags: [draft, weekly]
 description: io.js 1.6 release
 ---
