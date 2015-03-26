@@ -10,8 +10,6 @@
 				<title>weekly update 2015-03-20</title>
 				<description>&lt;h1 id=&quot;pht-hnh-iojs-16&quot;&gt;Phát hành io.js 1.6&lt;/h1&gt;
 
-&lt;p&gt;This week we had a two io.js releases &lt;a href=&quot;https://iojs.org/dist/v1.6.1/&quot;&gt;v1.6.1&lt;/a&gt; and  &lt;a href=&quot;https://iojs.org/dist/v1.6.0/&quot;&gt;v1.6.0&lt;/a&gt;, complete changelog can be found &lt;a href=&quot;https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md&quot;&gt;on GitHub&lt;/a&gt;.&lt;/p&gt;
-
 &lt;p&gt;Tuần này chúng ta có 2 bản phát hành của iojs &lt;a href=&quot;https://iojs.org/dist/v1.6.1/&quot;&gt;v1.6.1&lt;/a&gt; và  &lt;a href=&quot;https://iojs.org/dist/v1.6.0/&quot;&gt;v1.6.0&lt;/a&gt;, bạn có thể tìm thông tin đầy đủ các thay đổi &lt;a href=&quot;https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md&quot;&gt;tại GitHub&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;nhng-thay-i-ng-ch-&quot;&gt;Những thay đổi đáng chú ý&lt;/h3&gt;
@@ -20,16 +18,10 @@
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;path&lt;/strong&gt;: New type-checking on &lt;code&gt;path.resolve()&lt;/code&gt; &lt;a href=&quot;https://github.com/iojs/io.js/pull/1153&quot;&gt;#1153&lt;/a&gt; uncovered some edge-cases being relied upon in the wild, most notably &lt;code&gt;path.dirname(undefined)&lt;/code&gt;. Type-checking has been loosened for &lt;code&gt;path.dirname()&lt;/code&gt;, &lt;code&gt;path.basename()&lt;/code&gt;, and &lt;code&gt;path.extname()&lt;/code&gt; (Colin Ihrig) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1216&quot;&gt;#1216&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;path&lt;/strong&gt;: Thêm kiểm tra kiểu (type-checking) trên &lt;code&gt;path.resolve()&lt;/code&gt; &lt;a href=&quot;https://github.com/iojs/io.js/pull/1153&quot;&gt;#1153&lt;/a&gt; do phát hiện 1 số trường hợp lỗi mà điển hình là &lt;code&gt;path.dirname(undefined)&lt;/code&gt;. Kiểm tra kiểu (Type-checking) được lới lỏng cho &lt;code&gt;path.dirname()&lt;/code&gt;, &lt;code&gt;path.basename()&lt;/code&gt;, và &lt;code&gt;path.extname()&lt;/code&gt; (Colin Ihrig) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1216&quot;&gt;#1216&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;path&lt;/strong&gt;: Thêm kiểm tra kiểu (type-checking) trên &lt;code&gt;path.resolve()&lt;/code&gt; &lt;a href=&quot;https://github.com/iojs/io.js/pull/1153&quot;&gt;#1153&lt;/a&gt; do phát hiên 1 số trường hợp lỗi mà điển hình là &lt;code&gt;path.dirname(undefined)&lt;/code&gt;. Kiểm tra kiểu (Type-checking) được lới lỏng cho &lt;code&gt;path.dirname()&lt;/code&gt;, &lt;code&gt;path.basename()&lt;/code&gt;, và &lt;code&gt;path.extname()&lt;/code&gt; (Colin Ihrig) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1216&quot;&gt;#1216&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;querystring&lt;/strong&gt;: Internal optimizations in &lt;code&gt;querystring.parse()&lt;/code&gt; and &lt;code&gt;querystring.stringify()&lt;/code&gt; &lt;a href=&quot;https://github.com/iojs/io.js/pull/847&quot;&gt;#847&lt;/a&gt; prevented &lt;code&gt;Number&lt;/code&gt; literals from being properly converted via &lt;code&gt;querystring.escape()&lt;/code&gt; &lt;a href=&quot;https://github.com/iojs/io.js/issues/1208&quot;&gt;#1208&lt;/a&gt;, exposing a blind-spot in the test suite. The bug and the tests have now been fixed (Jeremiah Senkpiel) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1213&quot;&gt;#1213&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;querystring&lt;/strong&gt;: Tối ưu hóa bên trong &lt;code&gt;querystring.parse()&lt;/code&gt; và &lt;code&gt;querystring.stringify()&lt;/code&gt; &lt;a href=&quot;https://github.com/iojs/io.js/pull/847&quot;&gt;#847&lt;/a&gt; để tránh ngăn chặn các ký tự kiểu &lt;code&gt;Number&lt;/code&gt; được chuyển đổi thông qua &lt;code&gt;querystring.escape()&lt;/code&gt;&lt;a href=&quot;https://github.com/iojs/io.js/issues/1208&quot;&gt;#1208&lt;/a&gt;, phơi bày 1 điểm mù trong kiểm thử. Lỗi và kiểm thử đã được sửa bởi (Jeremiah Senkpiel) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1213&quot;&gt;#1213&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;querystring&lt;/strong&gt;: Tối ưu hóa bên trong &lt;code&gt;querystring.parse()&lt;/code&gt; và &lt;code&gt;querystring.stringify()&lt;/code&gt; &lt;a href=&quot;https://github.com/iojs/io.js/pull/847&quot;&gt;#847&lt;/a&gt; để tránh ngăn chặn các ký tự kiểu &lt;code&gt;Number&lt;/code&gt; được chuyển đổi thông qua &lt;code&gt;querystring.escape()&lt;/code&gt;&lt;a href=&quot;https://github.com/iojs/io.js/issues/1208&quot;&gt;#1208&lt;/a&gt;, phơi bày 1 lỗi trong kiểm thử. Lỗi và kiểm thử đã được sửa bởi (Jeremiah Senkpiel) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1213&quot;&gt;#1213&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -37,46 +29,25 @@
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;node&lt;/strong&gt;: a new &lt;code&gt;-r&lt;/code&gt; or &lt;code&gt;--require&lt;/code&gt; command-line option can be used to pre-load modules at start-up (Ali Ijaz Sheikh) &lt;a href=&quot;https://github.com/iojs/io.js/pull/881&quot;&gt;#881&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;node&lt;/strong&gt;: Một option mới trên command-line là  &lt;code&gt;-r&lt;/code&gt; hay &lt;code&gt;--require&lt;/code&gt; có thể được sử dụng để load trước các modules ở thời điểm khởi chạy (Ali Ijaz Sheikh) &lt;a href=&quot;https://github.com/iojs/io.js/pull/881&quot;&gt;#881&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;querystring&lt;/strong&gt;: &lt;code&gt;parse()&lt;/code&gt; and &lt;code&gt;stringify()&lt;/code&gt; are now faster (Brian White) &lt;a href=&quot;https://github.com/iojs/io.js/pull/847&quot;&gt;#847&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;querystring&lt;/strong&gt;: &lt;code&gt;parse()&lt;/code&gt; và &lt;code&gt;stringify()&lt;/code&gt; được tối ưu nhanh hơn (Brian White) &lt;a href=&quot;https://github.com/iojs/io.js/pull/847&quot;&gt;#847&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;http&lt;/strong&gt;: the &lt;code&gt;http.ClientRequest#flush()&lt;/code&gt; method has been deprecated and replaced with &lt;code&gt;http.ClientRequest#flushHeaders()&lt;/code&gt; to match the same change now in Node.js v0.12 as per &lt;a href=&quot;https://github.com/joyent/node/pull/9048&quot;&gt;joyent/node#9048&lt;/a&gt; (Yosuke Furukawa) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1156&quot;&gt;#1156&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;http&lt;/strong&gt;: Phương thức &lt;code&gt;http.ClientRequest#flush()&lt;/code&gt; đã bị phản đối và thay thế bởi &lt;code&gt;http.ClientRequest#flushHeaders()&lt;/code&gt; để phù hợp với sự thay đổi trên Node.js v0.12 &lt;a href=&quot;https://github.com/joyent/node/pull/9048&quot;&gt;joyent/node#9048&lt;/a&gt; (Yosuke Furukawa) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1156&quot;&gt;#1156&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;net&lt;/strong&gt;: allow &lt;code&gt;server.listen()&lt;/code&gt; to accept a &lt;code&gt;String&lt;/code&gt; option for &lt;code&gt;port&lt;/code&gt;, e.g. &lt;code&gt;{ port: &quot;1234&quot; }&lt;/code&gt;, to match the same option being accepted in &lt;code&gt;net.connect()&lt;/code&gt; as of &lt;a href=&quot;https://github.com/joyent/node/pull/9268&quot;&gt;joyent/node#9268&lt;/a&gt; (Ben Noordhuis) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1116&quot;&gt;#1116&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;net&lt;/strong&gt;: cho phép &lt;code&gt;server.listen()&lt;/code&gt; chấp nhận 1 &lt;code&gt;String&lt;/code&gt; cho &lt;code&gt;port&lt;/code&gt;, e.g. &lt;code&gt;{ port: &quot;1234&quot; }&lt;/code&gt;, để phù hợp với tham số tương tự đã được chấp nhận trong &lt;code&gt;net.connect()&lt;/code&gt; như &lt;a href=&quot;https://github.com/joyent/node/pull/9268&quot;&gt;joyent/node#9268&lt;/a&gt; (Ben Noordhuis) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1116&quot;&gt;#1116&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;tls&lt;/strong&gt;: further work on the reported memory leak although there appears to be a minor leak remaining for the use-case in question, track progress at &lt;a href=&quot;https://github.com/iojs/io.js/issues/1075&quot;&gt;#1075&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;tls&lt;/strong&gt;: tiếp tục báo cáo về memory leak thông qua sự xuất hiện các leak nhỏ trong các trường hợp sử dụng, theo dõi tiến độ tại &lt;a href=&quot;https://github.com/iojs/io.js/issues/1075&quot;&gt;#1075&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;v8&lt;/strong&gt;: backport a fix for an integer overflow when &lt;code&gt;--max_old_space_size&lt;/code&gt; values above &lt;code&gt;4096&lt;/code&gt; are used (Ben Noordhuis) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1166&quot;&gt;#1166&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;v8&lt;/strong&gt;: sửa chữa 1 lỗi tràn 1 số integer khi giá trị được sử dụng&lt;code&gt;--max_old_space_size&lt;/code&gt; trên &lt;code&gt;4096&lt;/code&gt; (Ben Noordhuis) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1166&quot;&gt;#1166&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;v8&lt;/strong&gt;: sửa chữa tràn 1 số integer khi giá trị &lt;code&gt;--max_old_space_size&lt;/code&gt; trên &lt;code&gt;4096&lt;/code&gt; được sử dụng (Ben Noordhuis) &lt;a href=&quot;https://github.com/iojs/io.js/pull/1166&quot;&gt;#1166&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;platforms&lt;/strong&gt;: the io.js CI system now reports passes on &lt;strong&gt;FreeBSD&lt;/strong&gt; and &lt;strong&gt;SmartOS&lt;/strong&gt; (&lt;em&gt;Solaris&lt;/em&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;platforms&lt;/strong&gt;: Hệ thống io.js Travis CI thông báo đã vượt qua  trên &lt;strong&gt;FreeBSD&lt;/strong&gt; và &lt;strong&gt;SmartOS&lt;/strong&gt; (&lt;em&gt;Solaris&lt;/em&gt;).&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;platforms&lt;/strong&gt;: Hệ thống io.js Travis CI thông báo đã vượt qua trên &lt;strong&gt;FreeBSD&lt;/strong&gt; và &lt;strong&gt;SmartOS&lt;/strong&gt; (&lt;em&gt;Solaris&lt;/em&gt;).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;npm&lt;/strong&gt;: cập nhật npm lên 2.7.1. Xem chi tiết tại &lt;a href=&quot;https://github.com/npm/npm/blob/master/CHANGELOG.md#v271-2015-03-05&quot;&gt;npm CHANGELOG.md&lt;/a&gt; .&lt;/p&gt;
@@ -87,79 +58,47 @@
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Possible remaining TLS-related memory leak(s), details at &lt;a href=&quot;https://github.com/iojs/io.js/issues/1075&quot;&gt;#1075&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
     &lt;p&gt;Các vấn đề memory leak còn lại liên quan đến TLS, chi tiết tại &lt;a href=&quot;https://github.com/iojs/io.js/issues/1075&quot;&gt;#1075&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Surrogate pair in REPL can freeze terminal &lt;a href=&quot;https://github.com/iojs/io.js/issues/690&quot;&gt;#690&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Surrogate pair trong REPL có thể làm treo terminal &lt;a href=&quot;https://github.com/iojs/io.js/issues/690&quot;&gt;#690&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Not possible to build io.js as a static library &lt;a href=&quot;https://github.com/iojs/io.js/issues/686&quot;&gt;#686&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
     &lt;p&gt;Không thể xây dựng io.js như là 1 static library &lt;a href=&quot;https://github.com/iojs/io.js/issues/686&quot;&gt;#686&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;process.send()&lt;/code&gt; is not synchronous as the docs suggest, a regression introduced in 1.0.2, see &lt;a href=&quot;https://github.com/iojs/io.js/issues/760&quot;&gt;#760&lt;/a&gt; and fix in &lt;a href=&quot;https://github.com/iojs/io.js/issues/774&quot;&gt;#774&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;process.send()&lt;/code&gt; là không đồng bộ như trong tài liệu đề cập, đã được thông báo trong 1.0.2, see &lt;a href=&quot;https://github.com/iojs/io.js/issues/760&quot;&gt;#760&lt;/a&gt; và được sửa trong &lt;a href=&quot;https://github.com/iojs/io.js/issues/774&quot;&gt;#774&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;process.send()&lt;/code&gt; là không đồng bộ như trong tài liệu đề cập, a regression introduced in 1.0.2, see &lt;a href=&quot;https://github.com/iojs/io.js/issues/760&quot;&gt;#760&lt;/a&gt; và được sửa trong &lt;a href=&quot;https://github.com/iojs/io.js/issues/774&quot;&gt;#774&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Calling &lt;code&gt;dns.setServers()&lt;/code&gt; while a DNS query is in progress can cause the process to crash on a failed assertion &lt;a href=&quot;https://github.com/iojs/io.js/issues/894&quot;&gt;#894&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Gọi &lt;code&gt;dns.setServers()&lt;/code&gt; khi 1 truy vấn DNS  đang được sử lý trong progress có thể khiến process bị crash trên 1 failed assertion &lt;a href=&quot;https://github.com/iojs/io.js/issues/894&quot;&gt;#894&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Gọi &lt;code&gt;dns.setServers()&lt;/code&gt; khi 1 truy vấn DNS  đang được sử lý trong progress có thể khiến process bị crash với 1 failed assertion &lt;a href=&quot;https://github.com/iojs/io.js/issues/894&quot;&gt;#894&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;cp-nht-t-cng-ng&quot;&gt;Cập nhật từ cộng đồng&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;browserify supports io.js, you can check the announcement &lt;a href=&quot;https://twitter.com/yosuke_furukawa/status/577150547850969088&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;browserify hỗ trợ io.js, bạn có thể xem thông báo ở &lt;a href=&quot;https://twitter.com/yosuke_furukawa/status/577150547850969088&quot;&gt;đây&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;express.js added &lt;a href=&quot;https://github.com/strongloop/express/commit/165660811aa9ba5f3733a7b033894f3d9a9c5e60&quot;&gt;support&lt;/a&gt; to io.js&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;express.js &lt;a href=&quot;https://github.com/strongloop/express/commit/165660811aa9ba5f3733a7b033894f3d9a9c5e60&quot;&gt;hỗ trợ&lt;/a&gt; thêm io.js&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Over the last two weeks we got access to hardware from Joyent and upstreamed a patch to V8 so we got io.js building. After that we worked on passing tests for both &lt;a href=&quot;https://github.com/iojs/build/pull/64&quot;&gt;SmartOS&lt;/a&gt; and &lt;a href=&quot;https://github.com/iojs/io.js/pull/1167&quot;&gt;FreeBSD&lt;/a&gt; which as of two days ago now pass, this was thanks to the amazing work of the build team and &lt;a href=&quot;https://github.com/jbergstroem&quot;&gt;Johan Bergström&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Trong 2 tuần qua chúng ta đã truy cập vào phần cứng từ Joyent và cập nhật 1 bản phá cho V8 nên chúng ta đã có 1 io.js building. Sau đó là việc vượt qua các bài test trên &lt;a href=&quot;https://github.com/iojs/build/pull/64&quot;&gt;SmartOS&lt;/a&gt; và &lt;a href=&quot;https://github.com/iojs/io.js/pull/1167&quot;&gt;FreeBSD&lt;/a&gt; 2 ngày trước , cảm ơn sự đóng góp tuyệt vời của build team và &lt;a href=&quot;https://github.com/jbergstroem&quot;&gt;Johan Bergström&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/petkaantonov&quot;&gt;Petka Antonov&lt;/a&gt; is proposing a workers implementation in io.js under an experimental flag, you can join the discussion &lt;a href=&quot;https://github.com/iojs/io.js/pull/1159&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Trong 2 tuần qua chúng ta đã truy cập vào phần cứng từ Joyent và cập nhật 1 bản phá cho V8 nên chúng ta đã có 1 bản io.js building. Sau đó là việc vượt qua các bài test trên &lt;a href=&quot;https://github.com/iojs/build/pull/64&quot;&gt;SmartOS&lt;/a&gt; và &lt;a href=&quot;https://github.com/iojs/io.js/pull/1167&quot;&gt;FreeBSD&lt;/a&gt; 2 ngày trước , cảm ơn sự đóng góp tuyệt vời của build team và &lt;a href=&quot;https://github.com/jbergstroem&quot;&gt;Johan Bergström&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://github.com/petkaantonov&quot;&gt;Petka Antonov&lt;/a&gt; đã đề xuất triển khai workers trên io.js dưới –experimental-workers flag, bạn có thể tham gia thảo luận tại đây &lt;a href=&quot;https://github.com/iojs/io.js/pull/1159&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;io.js &lt;a href=&quot;https://github.com/iojs/io.js/pull/1206&quot;&gt;upgraded&lt;/a&gt; openssl to &lt;code&gt;1.0.1m&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;io.js &lt;a href=&quot;https://github.com/iojs/io.js/pull/1206&quot;&gt;nâng cấp&lt;/a&gt; openssl lên &lt;code&gt;1.0.1m&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;io.js &lt;a href=&quot;https://github.com/iojs/io.js/pull/1206&quot;&gt;nâng cấp&lt;/a&gt; openssl lên &lt;code&gt;1.0.1m&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;s-kin-sp-din-ra&quot;&gt;Sự kiện sắp diễn ra&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://nodeconf.com/&quot;&gt;NodeConf&lt;/a&gt; tickets are on sale, June 8th and 9th at Oakland, CA and NodeConf Adventure for June 11th - 14th at Walker Creek Ranch, CA&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
     &lt;p&gt;Vé &lt;a href=&quot;http://nodeconf.com/&quot;&gt;NodeConf&lt;/a&gt; đã được bán, diễn ra vào ngày 08-09 tháng 6 tại Oakland, CA và NodeConf Adventure vào ngày June 11 - 14 tháng 6 tại Walker Creek Ranch, CA&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://2015.cascadiajs.com/&quot;&gt;CascadiaJS&lt;/a&gt; tickets are on sale, July 8th - 10th at Washington State&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Vé &lt;a href=&quot;http://2015.cascadiajs.com/&quot;&gt;CascadiaJS&lt;/a&gt; đã được bán, diễn ra vào ngày 08 - 10 tháng 7 tại Washington State&lt;/p&gt;
@@ -170,8 +109,8 @@
 &lt;/ul&gt;
 </description>
 				<pubDate>Fri, 20 Mar 2015 00:00:00 +0700</pubDate>
-				<link>/draft/weekly/2015/03/20/weekly-update.html</link>
-				<guid isPermaLink="true">/draft/weekly/2015/03/20/weekly-update.html</guid>
+				<link>/weekly/2015/03/20/weekly-update.html</link>
+				<guid isPermaLink="true">/weekly/2015/03/20/weekly-update.html</guid>
 			</item>
 		
 			<item>
