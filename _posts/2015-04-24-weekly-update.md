@@ -22,7 +22,6 @@ Xem chi tiết  [tại](https://github.com/iojs/io.js/wiki/Crypto-Performance-No
 * **src**: Cho phép truyền nhiều tham số vào process.nextTick (Trevor Norris) [#1077](https://github.com/iojs/io.js/pull/1077)
 * **module**: Sự tương tác của `require('.')` với `NODE_PATH` đã được phục hồi và bị phản đối. Chức năng này sẽ bị xóa bỏ tại (Roman Reiss) [#1363](https://github.com/iojs/io.js/pull/1363)
 
-### Known issues
 ### Vấn đề tồn tại
 
 * Một vài vấn đề với unreferenced timers chạy khi `beforeExit` vẫn đang được giải quyết. Xem tại [#1264](https://github.com/iojs/io.js/issues/1264).
