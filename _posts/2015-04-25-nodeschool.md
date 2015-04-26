@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Let nodeschool english together
+title: Let's learn nodeschool together
 categories: [nodeschool, tutorial]
 tags: [nodeschool, tutorial, draft]
 description: Hãy cùng nhau học nodeschool
