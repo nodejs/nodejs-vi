@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Let's learn nodeschool together
+title: Cùng nhau học nodeschool
 categories: [nodeschool, tutorial]
 tags: [nodeschool, tutorial, publish]
-description: Hãy cùng nhau học nodeschool
+description: Bài 1
 ---
 
 # Giới thiệu về Nodeschool
