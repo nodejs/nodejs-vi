@@ -1,51 +1,51 @@
-# io.js 1.5.0 Release
+# Ra mắt io.js 1.5.0
 
-On Friday, March 6th, [@rvagg](https://github.com/rvagg) released io.js [**v1.5.0**](https://iojs.org/dist/latest/).  The complete change log can be found [on GitHub](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md).
+Thứ Sáu, ngày 6 tháng Ba, [@rvagg](https://github.com/rvagg) ra mắt io.js [**v1.5.0**](https://iojs.org/dist/latest/).  Nhật ký thay đổi đầy đủ có thể tìm thấy [trên GitHub](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md).
 
-### Notable changes
+### Các thay đổi đáng kể
 
-* **buffer**: New `Buffer#indexOf()` method, modelled off [`Array#indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf). Accepts a String, Buffer or a Number. Strings are interpreted as UTF8. (Trevor Norris) [#561](https://github.com/iojs/io.js/pull/561)
-* **fs**: `options` object properties in `'fs'` methods no longer perform a `hasOwnProperty()` check, thereby allowing options objects to have prototype properties that apply. (Jonathan Ong) [#635](https://github.com/iojs/io.js/pull/635)
-* **tls**: A likely TLS memory leak was reported by PayPal. Some of the recent changes in **stream_wrap** appear to be to blame. The initial fix is in [#1078](https://github.com/iojs/io.js/pull/1078), you can track the progress toward closing the leak at [#1075](https://github.com/iojs/io.js/issues/1075) (Fedor Indutny).
-* **npm**: Upgrade npm to 2.7.0. See [npm CHANGELOG.md](https://github.com/npm/npm/blob/master/CHANGELOG.md#v270-2015-02-26) for details including why this is a semver-minor when it could have been semver-major.
-* **TC**: Colin Ihrig (@cjihrig) resigned from the TC due to his desire to do more code and fewer meetings.
+* **buffer**: Phương thúc mới `Buffer#indexOf()`, mô hình dựa trên [`Array#indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf). Nhận một Chuỗi, Buffer hay một Số. Chuỗi được xem dưới mã UTF-8. (Trevor Norris) [#561](https://github.com/iojs/io.js/pull/561)
+* **fs**: Thuộc tính `options` trong các phương thúc của`'fs'`  ngưng các kiểm tra `hasOwnProperty()`, bằng cách đó cho phép các đối tượnng `options` có các thuộc tính prototype áp dụng được. (Jonathan Ong) [#635](https://github.com/iojs/io.js/pull/635)
+* **tls**: Một lỗi tựa như tràn bộ nhớ TLS được báo cáo bởi PayPal. Có thể do một số thay đổi gần đây trong  **stream_wrap**. Bản vá ban đầu trong [#1078](https://github.com/iojs/io.js/pull/1078), bạn có thể xem tiến triển đóng lỗi tràn tại [#1075](https://github.com/iojs/io.js/issues/1075) (Fedor Indutny).
+* **npm**: Nâng cấp lên 2.7.0. Xem [npm CHANGELOG.md](https://github.com/npm/npm/blob/master/CHANGELOG.md#v270-2015-02-26) để biết chi tiết bao gồm tại sao đây lại là semver-minor thay vì semver-major.
+* **TC**: Colin Ihrig (@cjihrig) từ chức TC vì mong muốn được lập trình nhiều hơn và gặp mặt ít hơn.
 
-### Known issues
+### Các vấn đề đã biết
 
-* Possible TLS-related memory leak, details at [#1075](https://github.com/iojs/io.js/issues/1075).
-* Windows still reports some minor test failures and we are continuing to address all of these as a priority. See [#1005](https://github.com/iojs/io.js/issues/1005).
+* Lỗi tràn bộ nhớ có thể, liên quan tới TLS. Chi tiết tại [#1075](https://github.com/iojs/io.js/issues/1075).
+* Windows vẫn thông báo một số lỗi nhỏ trong các kiểm tra, chúng tôi đang ưu tiên xem xét các vấn đề này. Xem [#1005](https://github.com/iojs/io.js/issues/1005).
 * Surrogate pair in REPL can freeze terminal [#690](https://github.com/iojs/io.js/issues/690)
-* Not possible to build io.js as a static library [#686](https://github.com/iojs/io.js/issues/686)
-* `process.send()` is not synchronous as the docs suggest, a regression introduced in 1.0.2, see [#760](https://github.com/iojs/io.js/issues/760) and fix in [#774](https://github.com/iojs/io.js/issues/774)
+* Thông thể build io.js thành static library [#686](https://github.com/iojs/io.js/issues/686)
+* `process.send()` không đồng bộ (synchronous) như tài liệu nói, một sự trở lại từ 1.0.2, xem [#760](https://github.com/iojs/io.js/issues/760) và được sửa trong [#774](https://github.com/iojs/io.js/issues/774)
 
-# Community Updates
+# Thông báo Cộng đồng
 
-* You can relax knowing that io.js and latest node.js [**are not affected**](https://strongloop.com/strongblog/are-node-and-io-js-affected-by-the-freak-attack-openssl-vulnerability/) by the [FREAK Attack](https://freakattack.com/).  You are running io.js or the latest version of node.js, right?
+* Bạn có thể an tâm rằng io.js và bản mới nhất của Node.js [**không bị ảnh hưởng**](https://strongloop.com/strongblog/are-node-and-io-js-affected-by-the-freak-attack-openssl-vulnerability/) bới [FREAK Attack](https://freakattack.com/).  Bạn đang chạy io.js hay node.js mới nhất đúng không?
 
-* Walmart is now sponsoring a build machine for the io.js Jenkins CI system.  The @iojs/build team is working on creating io.js SunOS binaries (like you can get from nodejs.org).  A V8 fix ([iojs/io.js#1079](https://github.com/iojs/io.js/pull/1079)) needs to be landed first before more progress can be made.
-* We would also like to thank the following companies for contributing hardware and related technology/support/engineering for io.js builds:
-  * **Digital Ocean** (mainly Linux)
-  * **Rackspace** (mainly Windows)
-  * **Voxer** (OS X and FreeBSD)
+* Walmart đang tài trợ một build machine cho hệ thống io.js Jenkins CI. Nhóm @iojs/build đang làm việc tạo các bản io.js binaries cho SunOS (giống như từ nodé.org). Bản vá V8 ([iojs/io.js#1079](https://github.com/iojs/io.js/pull/1079)) cần tới trước khi các qui trình khác có thể diễn ra. 
+* Chúng tôi chân thành cảm ơn các công ty sau trong việc đóng góp phần cứng và các công nghệ / hỗ trợ / kỹ sư liên quan cho các bản build io.js:
+  * **Digital Ocean** (đa phần Linux)
+  * **Rackspace** (đa phần Windows)
+  * **Voxer** (OS X và FreeBSD)
   * **NodeSource** (ARMv6 & ARMv7)
   * **Linaro** (ARMv8)
   * **Walmart** (SmartOS / Solaris)
-* The io.js community has been hard at work on the internationalization of all of its content.  There are now over 20 active languages published on [iojs.org](http://iojs.org) and i18n community sites.  Additionally, i18n links ([iojs/website#258](https://github.com/iojs/website/pull/258)) have been added to the website footer for easy access.  Are we missing your language?  [Help us add it!](https://github.com/iojs/website/blob/master/TRANSLATION.md)
-* Speaking of translations, the [io.js roadmap presentation](http://roadmap.iojs.org/) has been updated to link to other language versions.
+* Cộng đồng io.js đã làm việc cực khổ để dịch tất cả các nội dung. Đang có hơn 20 ngôn ngữ hoạt động được đăng tải trên [iojs.org](http://iojs.org) và các  trang i18n. Thêm vào đó, các đường dẫn i18n ([iojs/website#258](https://github.com/iojs/website/pull/258)) đã được thêm vào các chân trang cho tiện. Chúng tôi thiếu ngôn ngữ của bạn? [Giúp chúng tôi và thêm nó!](https://github.com/iojs/website/blob/master/TRANSLATION.md)
+* Speaking of translations, the [io.js roadmap presentation](http://roadmap.iojs.org/) has been updated to link to other language versions. Tiện việc nhắc đến việc dịch, thuyết trình [io.js roadmap](http://roadmap.iojs.org/) đã được cập nhật tới các ngôn ngữ khác.
 
-* It seems that **PayPal** is running an experiment comparing [Kappa](https://www.npmjs.com/package/kappa)  on io.js vs node.js 0.12 vs node.js v0.10.  The PayPal team identified a likely TLS memory leak. Initial fix is in [#1078](https://github.com/iojs/io.js/pull/1078) and progress towards closing is in [#1075](https://github.com/iojs/io.js/issues/1075)
+* Dường như **PayPal** đang làm một thử nghiệm so sánh [Kappa](https://www.npmjs.com/package/kappa) trên io.js và node.js 0.12  và node.js v0.10. Nhóm PayPal đã xác định được một lỗi rất có thể là tràn bộ nhớ TLS. Bản vá ban đầu đã có trên [#1078](https://github.com/iojs/io.js/pull/1078) và trên đà kết thức trên [#1075](https://github.com/iojs/io.js/issues/1075)
 
-* [**NodeSource**](http://nodesource.com) is now providing io.js [Linux binary](https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories) packages for Ubuntu/Debian as well as RHEL/Fedora distributions.
-* The io.js [Docker build](https://registry.hub.docker.com/u/library/iojs/) is one of thirteen new [official Docker repositories](http://blog.docker.com/2015/03/thirteen-new-official-repositories-added-in-january-and-february/) added in January and February.
+* [**NodeSource**](http://nodesource.com) đang mang đến io.js các gói [binary Linux](https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories) cho Ubuntu/Debian cũng như các phân phối RHEL/Fedora.
+* Bản [build Docker](https://registry.hub.docker.com/u/library/iojs/) của io.js là một trong 13 [Docker repositories chính thức](http://blog.docker.com/2015/03/thirteen-new-official-repositories-added-in-january-and-february/) được thêm vào Tháng Giêng và Tháng 2.
 
-* NodeBots and IoT people should be happy to hear that the just-announced [**Tessel2**](http://blog.technical.io/post/112787427217/tessel-2-new-hardware-for-the-tessel-ecosystem) runs [io.js natively](http://blog.technical.io/post/112888410737/moving-faster-with-io-js).
-* [**@maxbeatty**](https://twitter.com/maxbeatty) is working on a new version of the [jsperf.com](http://jsperf.com/) backend, running on io.js and it is entirely [open source](https://github.com/jsperf/jsperf.com).  Contributions are welcome!
+* Những thành viên NodeBots và IoT nên ăn mừng việc [**Tessel2**](http://blog.technical.io/post/112787427217/tessel-2-new-hardware-for-the-tessel-ecosystem) mới công bố rằng sẽ chạy trên [io.js như native](http://blog.technical.io/post/112888410737/moving-faster-with-io-js).
+* [**@maxbeatty**](https://twitter.com/maxbeatty) đang làm việc trên bản mới cho back-end của [jsperf.com](http://jsperf.com/), chạy trên, nó hoàn toàn [mã nguồn mở](https://github.com/jsperf/jsperf.com).  Chào mừng các đóng góp của các bạn!
 
-* [@eranhammer](https://twitter.com/eranhammer) wrote a blog post called [The Node Version Dilemma](http://hueniverse.com/2015/03/02/the-node-version-dilemma/) which discusses the various node.js / io.js versions and proposes which ones to use and when to use them.
+* [@eranhammer](https://twitter.com/eranhammer) ghi một bài viết gọi là [The Node Version Dilemma](http://hueniverse.com/2015/03/02/the-node-version-dilemma/), thảo luận về các phiên bản của node.js/ io.js và các đề xuất lúc nào và cái nào để dùng chúng.
 
 
 
-# io.js Support Added
+# Các hỗ trợ mới cho io.js
 
-* **[scrypt](https://npmjs.com/scrypt)** now supports io.js. Learn more from this [GitHub issue](https://github.com/barrysteyn/node-scrypt/issues/39)
-* **[proxyquire](https://github.com/thlorenz/proxyquire)** v1.3.2 published with support for iojs.
+* **[scrypt](https://npmjs.com/scrypt)** hỗ trợ io.js. Xem thêm: [GitHub issue](https://github.com/barrysteyn/node-scrypt/issues/39)
+* **[proxyquire](https://github.com/thlorenz/proxyquire)** v1.3.2 ra mắt với hỗ trợ cho io.js.
