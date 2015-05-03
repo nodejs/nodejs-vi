@@ -2,7 +2,7 @@
 layout: post
 title: weekly update 2015-02-20
 categories: [weekly]
-tags: [weekly]
+tags: [weekly, publish]
 description: io.js Releases 1.3.0
 ---
 

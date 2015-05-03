@@ -2,7 +2,7 @@
 layout: post
 title: weekly update 2015-02-06
 categories: [weekly]
-tags: [weekly]
+tags: [weekly, publish]
 description: Vào mỗi thứ 6, chúng tôi sẽ bắt đầu đăng các cập nhật hàng tuần về các hoạt động bên trong và xung quanh dự án. Tôi sẽ tạo ra 1 issue mới mỗi tuần để mọi người có thể bình luận và đóng góp trước khi bài viết được xuất bản.
 ---
 
