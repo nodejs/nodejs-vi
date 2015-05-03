@@ -6,92 +6,92 @@ tags: [weekly]
 description: io.js support added by...
 ---
 
-## io.js support added by...
+## io.js mới được thêm vào hỗ trợ
 * [Postmark](http://blog.postmarkapp.com/post/110829734198/its-official-were-getting-cozy-with-node-js)
 * [node-serialport](https://github.com/voodootikigod/node-serialport/issues/439)
 * [Microsoft Azure](http://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-iojs/)
 
-## io.js breaks 10,000 stars on GitHub
-On Feb. 13, io.js reached the goal of 10,000 stars on GitHub. We couldn't have done it without the support of the amazing community behind JavaScript. Thank you alll!
+## io.js vượt mức 10.000 sao trên GitHub!
+Ngày 13 tháng 2, io.js đạt được 10.000 sao trên Github. Chúng tôi đã không thể làm được điều nà nếu không có sự trợ giúp của cộng đồng đằng sau JavaScript tuyệt vời. Cảm ơn tất cả!
 
-## io.js 1.2.0 released
-* **stream**: Simpler stream construction ([readable-stream/issues#102[(https://github.com/iojs/readable-stream/issues/102))
-* **dns**: `lookup()` now supports an `'all'` boolean option, default to `false` but when turned on will cause the method to return an array of all resolved names for an address, see, ([iojs/pull#744](https://github.com/iojs/io.js/pull/744))
-* **assert**: Remove `prototype` property comparison in `deepEqual()` ([iojs/issues#636](https://github.com/iojs/io.js/pull/636)); introduce a `deepStrictEqual()` method to mirror `deepEqual()` but performs strict equality checks on primitives ([iojs/issues#639](https://github.com/iojs/io.js/pull/639)).
-* **tracing**: Add [LTTng](http://lttng.org/) (Linux Trace Toolkit Next Generation) when compiled with the `--with-lttng option`. Trace points match those available for DTrace and ETW. ([iojs/issues#702](https://github.com/iojs/io.js/pull/702))
-* **docs**: Lots of doc updates, see individual commits; new Errors page discussing JavaScript errors, V8 specifics, and io.js specific error details.
-* **npm** upgrade to 2.5.1
-* **libuv** upgrade to 1.4.0, see libuv [ChangeLog](https://github.com/libuv/libuv/blob/v1.x/ChangeLog)
-* Add new collaborators:
+## Ra mắt io.js 1.2.0
+* **stream**: Construct stream dễ hơn ([readable-stream/issues#102[(https://github.com/iojs/readable-stream/issues/102))
+* **dns**: Phương thức `lookup()` bây giờ hỗ trợ một boolean `'all'`, mặt định là `false` nhưng khi kích hoạt, các thức sẽ trả về một mảng chứa tất cả tên giải được từ một địa chỉ, xem ([iojs/pull#744](https://github.com/iojs/io.js/pull/744))
+* **assert**: Loại bỏ so sánh thuộc tính `prototype` trong `deepEqual()` ([iojs/issues#636](https://github.com/iojs/io.js/pull/636)); giới thiệu phương thức `deepStrictEqual()` gióng với `deepEqual()` nhưng vận hành chặt chẽ việc so-sánh-bằng các primitives ([iojs/issues#639](https://github.com/iojs/io.js/pull/639)).
+* **tracing**: Thêm [LTTng](http://lttng.org/) (Linux Trace Toolkit Next Generation) khi biên dịch với lựa chọn `--with-lttng`. Truy ra các điểm có sẵn cho DTrace và ETW. ([iojs/issues#702](https://github.com/iojs/io.js/pull/702))
+* **docs**: Rất nhiều cập nhật cho tài liệu, xem các commit riêng lẽ; trang Errors mới bàn về các lỗi JavaScript, các chi tiết về V8 và chi tiết các lỗi riêng của io.js.
+* **npm** nâng cấp lên 2.5.1
+* **libuv** nâng cấp lên 1.4.0, xem libuv [ChangeLog](https://github.com/libuv/libuv/blob/v1.x/ChangeLog)
+* Thêm các collaborators:
   * Aleksey Smolenchuk (@lxe)
   * Shigeki Ohtsu (@shigeki)
 
-## Opened our doors to the international community
-View the [original article](https://medium.com/@mikeal/how-io-js-built-a-146-person-27-language-localization-effort-in-one-day-65e5b1c49a62) on Medium.
-* Added interested contributors to teams for their language.
-* Teams registered Twitter accounts for their teams and other relevant social media accounts.
-* Teams came up with their own ways of working together, and they became more of "community organizers," as opposed to just "translators"
+## Mở cửa cho các cộng đồng toàn cầu
+Xem [bài viết](https://medium.com/@mikeal/how-io-js-built-a-146-person-27-language-localization-effort-in-one-day-65e5b1c49a62) trên Medium.
+* Đã thêm những người đóng góp tới nhóm ngôn ngữ của họ.
+* Các nhóm đăng ký tài khoảng Twitter và các tài khoảng trên các phương tiện truyền thông khác.
+* Các nhóm tìm cách hoạt đồng cùng nhau, và trở thành các "người quản lý cộng đồng" hơn chỉ là "những dịch giả".
 
-### Stats for Localizations:
+### Thông số việc nội địa hoá:
 
-* 146 people signed up to help with the localizations the first day (over 160 signed up now)
-* 27 languages communities created the first day (already up to 29)
+* 146 người đã đăng ký giúp việc nội địa hoá ngày đầu tiên (bây giờ đã là 160 người)
+* 27 cộng đồng ngôn ngũ được tạo ngày đầu tiên (bây giờ là 29)
 
-### Language Communities
+### Các cộng đồng ngôn ngữ
 
-* [`iojs-bn`](https://github.com/iojs/iojs-bn) Bengali Community
-* [`iojs-cn`](https://github.com/iojs/iojs-cn) Chinese Community
-* [`iojs-cs`](https://github.com/iojs/iojs-cs) Czech Community
-* [`iojs-da`](https://github.com/iojs/iojs-da) Danish Community
-* [`iojs-de`](https://github.com/iojs/iojs-de) German Community
-* [`iojs-el`](https://github.com/iojs/iojs-el) Greek Community
-* [`iojs-es`](https://github.com/iojs/iojs-es) Spanish Community
-* [`iojs-fa`](https://github.com/iojs/iojs-fa) Persian Community
-* [`iojs-fi`](https://github.com/iojs/iojs-fi) Finnish Community
-* [`iojs-fr`](https://github.com/iojs/iojs-fr) French Community
-* [`iojs-he`](https://github.com/iojs/iojs-he) Hebrew Community
-* [`iojs-hi`](https://github.com/iojs/iojs-hi) Hindi Community
-* [`iojs-hu`](https://github.com/iojs/iojs-hu) Hungarian Community
-* [`iojs-id`](https://github.com/iojs/iojs-id) Indonesian Community
-* [`iojs-it`](https://github.com/iojs/iojs-it) Italian Community
-* [`iojs-ja`](https://github.com/iojs/iojs-ja) Japanese Community
-* [`iojs-ka`](https://github.com/iojs/iojs-ka) Georgian Community
-* [`iojs-kr`](https://github.com/iojs/iojs-kr) Korean Community
-* [`iojs-mk`](https://github.com/iojs/iojs-mk) Macedonian Community
-* [`iojs-nl`](https://github.com/iojs/iojs-nl) Dutch Community
-* [`iojs-no`](https://github.com/iojs/iojs-no) Norwegian Community
-* [`iojs-pl`](https://github.com/iojs/iojs-pl) Polish Community
-* [`iojs-pt`](https://github.com/iojs/iojs-pt) Portuguese Community
-* [`iojs-ro`](https://github.com/iojs/iojs-ro) Romanian Community
-* [`iojs-ru`](https://github.com/iojs/iojs-ru) Russian Community
-* [`iojs-sv`](https://github.com/iojs/iojs-sv) Swedish Community
-* [`iojs-tr`](https://github.com/iojs/iojs-tr) Turkish Community
-* [`iojs-tw`](https://github.com/iojs/iojs-tw) Taiwan Community
-* [`iojs-uk`](https://github.com/iojs/iojs-uk) Ukranian Community
+* [`iojs-bn`](https://github.com/iojs/iojs-bn) Cộng đồng Bengali 
+* [`iojs-cn`](https://github.com/iojs/iojs-cn) Cộng đồng Trung Quốc
+* [`iojs-cs`](https://github.com/iojs/iojs-cs) Cộng đồng Czech 
+* [`iojs-da`](https://github.com/iojs/iojs-da) Cộng đồng Danish 
+* [`iojs-de`](https://github.com/iojs/iojs-de) Cộng đồng Đức 
+* [`iojs-el`](https://github.com/iojs/iojs-el) Cộng đồng Hy Lạp
+* [`iojs-es`](https://github.com/iojs/iojs-es) Cộng đồng Tây Ban Nha
+* [`iojs-fa`](https://github.com/iojs/iojs-fa) Cộng đồng Persian 
+* [`iojs-fi`](https://github.com/iojs/iojs-fi) Cộng đồng Finnish 
+* [`iojs-fr`](https://github.com/iojs/iojs-fr) Cộng đồng Pháp
+* [`iojs-he`](https://github.com/iojs/iojs-he) Cộng đồng Hebrew 
+* [`iojs-hi`](https://github.com/iojs/iojs-hi) Cộng đồng Hindi 
+* [`iojs-hu`](https://github.com/iojs/iojs-hu) Cộng đồng Hungarian 
+* [`iojs-id`](https://github.com/iojs/iojs-id) Cộng đồng Indonesian 
+* [`iojs-it`](https://github.com/iojs/iojs-it) Cộng đồng Ý
+* [`iojs-ja`](https://github.com/iojs/iojs-ja) Cộng đồng Nhật Bản
+* [`iojs-ka`](https://github.com/iojs/iojs-ka) Cộng đồng Georgian 
+* [`iojs-kr`](https://github.com/iojs/iojs-kr) Cộng đồng Hàn Quốc
+* [`iojs-mk`](https://github.com/iojs/iojs-mk) Cộng đồng Macedonian 
+* [`iojs-nl`](https://github.com/iojs/iojs-nl) Cộng đồng Hà Lan
+* [`iojs-no`](https://github.com/iojs/iojs-no) Cộng đồng Norwegian 
+* [`iojs-pl`](https://github.com/iojs/iojs-pl) Cộng đồng Polish 
+* [`iojs-pt`](https://github.com/iojs/iojs-pt) Cộng đồng Bồ Đào Nha
+* [`iojs-ro`](https://github.com/iojs/iojs-ro) Cộng đồng Romanian 
+* [`iojs-ru`](https://github.com/iojs/iojs-ru) Cộng đồng Nga
+* [`iojs-sv`](https://github.com/iojs/iojs-sv) Cộng đồng Swedish 
+* [`iojs-tr`](https://github.com/iojs/iojs-tr) Cộng đồng Thổ Nhĩ Kỳ
+* [`iojs-tw`](https://github.com/iojs/iojs-tw) Cộng đồng Đài Loan
+* [`iojs-uk`](https://github.com/iojs/iojs-uk) Cộng đồng Ukranian 
 
-## io.js and Node.js
-View the [original article](https://medium.com/@iojs/io-js-and-a-node-js-foundation-4e14699fb7be) on Medium.
-* Scott Hammond, CEO of Joyent, expressed his desire to bring io.js back to the node.js.
+## io.js và Node.js
+Xem [bài viết](https://medium.com/@iojs/io-js-and-a-node-js-foundation-4e14699fb7be) trên Medium.
+* Scott Hammond, CEO của Joyent, thể hiện mong muốn của anh: đem io.js về node.js.
 
-#### In only a few months io.js...
-* Has grown to 23 active core team members
-* Has several working groups
-* Has 29 language localization teams,
-* Has drawn more contributors to the project than we’ve ever had in the history of node.js, and
-* Has been able to release quality software at a good pace with the support of an exceptional community.
+#### Trong chỉ vài tháng, io.js đã
+* Has grown to 23 active core team members Có tới 23 thành viên cốt lõi
+* Has several working groups Có vài nhóm hoạt động
+* Has 29 language localization teams, Có 29 nhóm nội địa hoá
+* Đã thu hút nhiều người đóng góp dự án hơn lịch sử của Node.js, và
+* Đã có thể ra mắt các phần mềm chất lượng với một tốc độ tốt nhờ hỗ trợ từ một cộng đồng phi thường.
 
-> We are eager to put this all behind us but we can’t sacrifice the progress we’ve made or the principles and open governance that got us here.
+> Chúng tôi rất muốn để lại tất cả mọi thứ nhưng chúng tôi không thể hy sinh các cộng sức đã làm được hay các nguyên lý quản trị mở mà đã đưa tất cả đến hiện tại.
 
-### The Future
-* Talks with the node.js foundation are ongoing.
-* Once the foundation has a technical governance model you will see an issue on io.js’ GitHub about whether io.js should join.
+### Tương lai
+* Các đàm phán với Node.js foundation vẫn còn đang diễn ra.
+* Khi foundation có được mô hình quản trị, sẽ có một Issue trên Github của io.js về việc có nên sát nhập.
 
-  * This will be discussed and voted on openly in a public TC meeting following the governance rules we’ve already built.
+  * Việc này sẽ được thảo luận và bình chọn trong một cuộc gặp mặt công khai theo với các quy tắc quản trị đã dựng.
 
-> For the community, nothing has changed.
+> Về cộng đồng, không có gì thay đổi
 
-### What to do right now
-* Continue to send your pull requests to io.js
-* Join one of the 27 [language localization teams](https://github.com/iojs/website/issues/125)
-* Contribute to io.js’ working groups ([streams](https://github.com/iojs/readable-stream), [website](https://github.com/iojs/website), [evangelism](https://github.com/iojs/website/labels/evangelism), [tracing](https://github.com/iojs/tracing-wg), [build](https://github.com/iojs/build), [roadmap](https://github.com/iojs/roadmap)) and
-* Continue to adopt io.js in your applications.
+### Việc cần phải làm bây giờ
+* Tiếp tục gửi các Pull Request tới io.js.
+* Tham gia một trong các 27 [nhóm nội địa hoá](https://github.com/iojs/website/issues/125)
+* Đóng góp vào các nhóm hoạt động ([streams](https://github.com/iojs/readable-stream), [website](https://github.com/iojs/website), [evangelism](https://github.com/iojs/website/labels/evangelism), [tracing](https://github.com/iojs/tracing-wg), [build](https://github.com/iojs/build), [roadmap](https://github.com/iojs/roadmap)) and
+* Tiếp tục dùng io.js trong các ứng dụng của bạn.

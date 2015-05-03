@@ -38,4 +38,4 @@ Khi nhìn lại tất cả các đóng góp trong Tháng 1, chúng ta sẽ nhậ
 
 * Chúng tôi bắt đầu tiếp cận các công ty để thu thập cách phản hồi về roadmap. https://github.com/iojs/roadmap/issues/13 Nếu chúng tôi thiếu xót bất cứ công ty nào, xin hãy để lại thông tin liên lạc lên GitHub Issue.
 
-* Tuần tới là Node Summit w/ rất nhiều thành viên io.js sẽ tham dự và phát biểu. Bert Belder, Thorsten Lorenz, Isaac Schlueter.
+* Tuần tới là Node Summit với rất nhiều thành viên io.js sẽ tham dự và phát biểu. Bert Belder, Thorsten Lorenz, Isaac Schlueter.
