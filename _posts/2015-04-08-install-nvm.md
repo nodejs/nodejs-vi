@@ -2,7 +2,7 @@
 layout: post
 title: Cài đặt nvm và iojs
 categories: [tutorial]
-tags: [tutorial, draft]
+tags: [tutorial, publish]
 description: Cài đặt nvm và iojs
 ---
 
