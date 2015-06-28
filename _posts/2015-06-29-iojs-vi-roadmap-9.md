@@ -10,7 +10,7 @@ description: Roadmap cho iojs Việt Nam
 Xin chào mọi người,
 
 Do dạo này công việc của team nhiều nên mình bỏ lỡ mất khoảng 7, 8 weekly update của [iojs Việt Nam](https://github.com/nodejs/iojs-vi).
-Hôm qua vừa có cuộc nói chuyện đầy cở mở với founder của [Nodeschool Hà Nội](https://github.com/nodeschool/hanoi) là bạn [Hải](https://github.com/dominhhai). Mục tiêu là hợp nhất 2 nền tảng [Nodeschool](https://github.com/nodeschool/hanoi) và [iojs Việt Nam](https://github.com/nodejs/iojs-vi) làm một. Đây là ý tưởng tuyệt vời khi thống nhất chung những người dùng của [nodejs](https://nodejs.org/) tại Việt Nam làm một, tạo nên sân chơi lành mạnh và cũng đúng với ý tưởng ban đầu của mình khi tạo ra [iojs Việt Nam](https://github.com/nodejs/iojs-vi). Nhưng cũng có vấn dề khi hợp nhất là sao loãng mục tiêu. Khi hợp nhất 1 nền tảng mới sẽ phải:
+Hôm qua vừa có cuộc nói chuyện đầy cở mở với founder của [Nodeschool Hà Nội](https://github.com/nodeschool/hanoi) là bạn [Hải](https://github.com/dominhhai). Mục tiêu là hợp nhất 2 nền tảng [Nodeschool](https://github.com/nodeschool/hanoi) và [iojs Việt Nam](https://github.com/nodejs/iojs-vi) làm một. Đây là ý tưởng tuyệt vời khi thống nhất chung những người dùng của [nodejs](https://nodejs.org/) tại Việt Nam làm một, tạo nên sân chơi lành mạnh và cũng đúng với ý tưởng ban đầu của mình khi tạo ra [iojs Việt Nam](https://github.com/nodejs/iojs-vi). Nhưng cũng có vấn đề khi hợp nhất là sao loãng mục tiêu. Khi hợp nhất 1 nền tảng mới sẽ phải:
 
 * Cung cấp các hướng dẫn về [nodejs](https://nodejs.org/) cho cộng đồng
 * Cung cấp các thông tin mới về [nodejs](https://nodejs.org/)
