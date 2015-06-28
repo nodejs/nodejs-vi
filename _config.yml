@@ -6,7 +6,6 @@ exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
 
-
 defaults:
   -
     scope:
@@ -14,6 +13,8 @@ defaults:
     values:
       title: iojs vietnam community
 
+name: iojs vietnam community
+url: http://iojs-vi.com/
 description: iojs vietnam community Blog
 author:
   name: iojs-vi
