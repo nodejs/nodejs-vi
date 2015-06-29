@@ -2,7 +2,7 @@
 layout: post
 title: iojs viet nam roadmap
 categories: [weekly]
-tags: [weekly, draft, roadmap]
+tags: [weekly, publish, roadmap]
 description: Roadmap cho iojs Việt Nam
 ---
 

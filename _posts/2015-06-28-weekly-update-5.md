@@ -2,73 +2,51 @@
 layout: post
 title: weekly update 2015-05-29
 categories: [weekly]
-tags: [weekly, draft]
+tags: [weekly, publish]
 description: weekly update 2015-05-29
 ---
 
-# io.js 2.2 releases
 # Phát hành io.js 2.2
 
-This week we had two io.js releases [v2.2.0](https://iojs.org/dist/v2.2.0/) and [v2.2.1](https://iojs.org/dist/v2.2.1/), complete changelog can be found [on GitHub](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md).
 Tuần này chúng ta có 2 bản phát hành io.js [v2.2.0](https://iojs.org/dist/v2.2.0/) và [v2.2.1](https://iojs.org/dist/v2.2.1/),
 toàn bộ các thay đổi có thể tìm thấy [trên GitHub](https://github.com/nodejs/io.js/blob/master/CHANGELOG.md).
 
-
-### Notable changes
 ### Những thay đổi đáng chú ý
 
 #### v2.2.0
 
-* **node**: Speed-up `require()` by replacing usage of `fs.statSync()` and `fs.readFileSync()` with internal variants that are faster for this use-case and do not create as many objects for the garbage collector to clean up. The primary two benefits are: significant increase in application start-up time on typical applications and better start-up time for the debugger by eliminating almost all of the thousands of exception events. (Ben Noordhuis) [#1801](https://github.com/nodejs/io.js/pull/1801).
-* **node**: Resolution of pre-load modules (`-r` or `--require`) now follows the standard `require()` rules rather than just resolving paths, so you can now pre-load modules in node_modules. (Ali Ijaz Sheikh) [#1812](https://github.com/nodejs/io.js/pull/1812).
-* **npm**: Upgraded npm to v2.11.0. New hooks for `preversion`, `version`, and `postversion` lifecycle events, some SPDX-related license changes and license file inclusions. See the [release notes](https://github.com/npm/npm/releases/tag/v2.11.0) for full details.
+* **node**: Tăng tốc cho `require()` bằng cách thay thế sử dụng của `fs.statSync()` và `fs.readFileSync()` bằng các biến nội bộ như vậy sẽ nhanh hơn trong trường hợp này và không tạo quá nhiều objects cho garbage collector phải dọn dẹp. Hai lợi ích chính là : gia tăng đáng kể được thời gian khởi động cho các ứng dụng phổ biến vả cải thiện thời gian khởi động cho debugger bằng cách bỏ qua tất cả exception events. (Ben Noordhuis) [#1801](https://github.com/nodejs/io.js/pull/1801).
+* **node**: Pre-load modules (`-r` or `--require`) giờ hoạt động theo các chuẩn quy tắc của `require()` hơn là giải quyết vấn đề đường dẫn, giờ bạn đã có thể pre-load modules trong node_modules. (Ali Ijaz Sheikh) [#1812](https://github.com/nodejs/io.js/pull/1812).
+* **npm**: Cập nhật npm to v2.11.0. Thêm hooks mới cho `preversion`, `version`, và `postversion` lifecycle events, thay đổi 1 vài giấy phép SPDX-related. Xem chi tiết tại [release notes](https://github.com/npm/npm/releases/tag/v2.11.0).
 
 #### v2.2.1
 
-* **http**: reverts the removal of an undocumented `client` property on client connections, this property is being used in the wild, most notably by [request](https://github.com/request/request) which is used by npm. (Michaël Zasso) [#1852](https://github.com/nodejs/io.js/pull/1852).
+* **http**: phục hồi lại 1 thuộc tính đã được xóa bỏ nhưng không ghi chép đó là `client` trong client connections, thuộc tính này được sử dụng khá phổ biến, nổi bật là [request](https://github.com/request/request) được sử dụng bởi npm. (Michaël Zasso) [#1852](https://github.com/nodejs/io.js/pull/1852).
 
 ### Các lỗi hiện tại
-### Known issues
 
-See https://github.com/nodejs/io.js/labels/confirmed-bug for complete and current list of known issues.
 Xem đầy đủ các lỗi được biết đến hiện nay tại https://github.com/nodejs/io.js/labels/confirmed-bug
 
-
-* Some problems with unreferenced timers running during `beforeExit` are still to be resolved. See [#1264](https://github.com/nodejs/io.js/issues/1264).
 * Một vài vấn đề với unreferenced timers chạy trong  `beforeExit` vẫn đang được giải quyết. Xem tại [#1264](https://github.com/nodejs/io.js/issues/1264).
-
-* Surrogate pair in REPL can freeze terminal [#690](https://github.com/nodejs/io.js/issues/690)
 * Surrogate pair trong REPL có thể làm treo terminal [#690](https://github.com/iojs/io.js/issues/690)
-
-* `process.send()` is not synchronous as the docs suggest, a regression introduced in 1.0.2, see [#760](https://github.com/nodejs/io.js/issues/760) and fix in [#774](https://github.com/nodejs/io.js/issues/774)
 * `process.send()` không đồng bộ như trong tài liệu đề cập, đã được thông báo trong 1.0.2, Xem [#760](https://github.com/iojs/io.js/issues/760) để biết thông tin chi tiết và được sửa đổi trong [#774]
 (https://github.com/iojs/io.js/issues/774)
-
-* Calling `dns.setServers()` while a DNS query is in progress can cause the process to crash on a failed assertion [#894](https://github.com/nodejs/io.js/issues/894)
 * Gọi `dns.setServers()`  khi 1 truy vấn DNS đang được sử lý trong progress có thể khiến process bị crash với 1 failed assertion [#894](https://github.com/iojs/io.js/issues/894)
-
-* `url.resolve` may transfer the auth portion of the url when resolving between two full hosts, see [#1435](https://github.com/nodejs/io.js/issues/1435).
 * `url.resolve` có thể chuyển phần auth của url khi sử dụng `require("url").resolve` giữa 2 full hosts, xem tại [#1435](https://github.com/iojs/io.js/issues/1435).
 
 ### Cập nhật từ cộng đồng
-### Community Updates
 
-* [Schism and Reconciliation](https://nodesource.com/blog/was-this-trip-really-necessary) in the Node Community by Rod Vagg.
 * [Việc tách và hòa hợp ](https://nodesource.com/blog/was-this-trip-really-necessary) trong cộng đồng Node bởi Rod Vagg.
-
-* First Node TSC Meeting available on [SoundCloud](https://soundcloud.com/node-foundation/tsc-meeting-2015-05-27).
 * Làn đầu tiên Node TSC Meeting có mặt trên [SoundCloud](https://soundcloud.com/node-foundation/tsc-meeting-2015-05-27).
-
-* io.js have got a new Benchmarking Working Group [nodejs/benchmarking#1](https://github.com/nodejs/benchmarking/issues/1).
 * io.js có 1 nhóm mới Benchmarking Working Group [nodejs/benchmarking#1](https://github.com/nodejs/benchmarking/issues/1).
-
-* Blog post about iojs + node.js under Node Foundation by [nodejs.com](http://blog.nodejs.org/2015/05/15/the-nodejs-foundation-benefits-all/).
-* io.js implements new [`good first contribution`](https://github.com/nodejs/io.js/labels/good%20first%20contribution) tag for new contributors.
-* Blog post from [TheNewStack](http://thenewstack.io/io-js-and-node-js-have-united-and-thats-a-good-thing/) about iojs and node.js new relation.
-* Oliver Zeigermann created a [repo](https://github.com/DJCordhose/ecmascript-2015-iojs) about ES6 and iojs implementation.
+* Bài viết về iojs + node.js dưới tên Node Foundation bởi [nodejs.com](http://blog.nodejs.org/2015/05/15/the-nodejs-foundation-benefits-all/).
+* io.js triển khai tag mới là [`good first contribution`](https://github.com/nodejs/io.js/labels/good%20first%20contribution) cho những đóng góp mới.
+* Bài viết từ [TheNewStack](http://thenewstack.io/io-js-and-node-js-have-united-and-thats-a-good-thing/) về mới quan hệ mới của iojs và node.js.
+* Oliver Zeigermann tạo mới 1 [repo](https://github.com/DJCordhose/ecmascript-2015-iojs) về triển khải ES6 và iojs.
 
 ### Sự kiện sắp diễn ra
-### Upcoming Events
 
-* [NodeConf Adventure](http://nodeconf.com/) tickets are on sale, June 11th - 14th at Walker Creek Ranch, CA
 * Vé [NodeConf Adventure](http://nodeconf.com/) đã được bán, diễn ra vào ngày 11 - 14 tháng 6 tại Walker Creek Ranch, CA
+* Vé [CascadiaJS](http://2015.cascadiajs.com/) đã được bán, diễn ra vào ngày 08 - 10 tháng 7 tại Washington State
+* Vé [BrazilJS Conf](http://braziljs.com.br/) đã được bán, diễn ra vào ngày 21 - 22 tháng 8 tại Shopping Center BarraShoppingSul
+* Vé [NodeConf EU](http://nodeconf.eu/) đã được bán, diễn ra vào ngày 06 - 09 tháng 9 tại Waterford, Ireland
