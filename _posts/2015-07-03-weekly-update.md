@@ -13,7 +13,7 @@ Tuần này chúng ta có 1 bản phát hành io.js [ v2.3.1](https://github.com
 * **module**: Số lần syscalls  được tạo ra trong một `require()` đã được giảm đáng kể 1 lần nữa (xem tại [#1801](https://github.com/nodejs/io.js/pull/1801) của v2.2.0 cho lần sửa đổi trước), dẫn đến một cải thiện về hiệu năng (Pierre Inglebert) [#1920](https://github.com/nodejs/io.js/pull/1920).
 
 * **npm**:
-  * Cập nhật lên  [v2.11.2](https://github.com/npm/npm/releases/tag/v2.11.2) (Rebecca Turner) [#1956](https://github.com/nodejs/io.js/pull/1956).
+  * Cập nhật lên [v2.11.2](https://github.com/npm/npm/releases/tag/v2.11.2) (Rebecca Turner) [#1956](https://github.com/nodejs/io.js/pull/1956).
   * Cập nhật lên [v2.11.3](https://github.com/npm/npm/releases/tag/v2.11.3) (Forrest L Norvell) [#2018](https://github.com/nodejs/io.js/pull/2018).
 
 * **zlib**: Một lỗi được phát hiện ra, quá trình sử lý có thể bị dừng nếu như phần cuối của 1 kết quả giải nén zlib trong bộ nhớ đệm vượt quá `0x3fffffff` byte (~ 1GiB). Điều này có thể chỉ sảy ra trong quá trình giải nén bộ nhớ đệm (hơn là trong streaming) và đã được sửa đồng thời sẽ ném ra 1  `RangeError` (Michaël Zasso)  [#1811](https://github.com/nodejs/io.js/pull/1811).
