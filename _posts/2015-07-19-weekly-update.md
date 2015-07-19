@@ -19,6 +19,7 @@ Tuần này chúng ta có 2 bản phát hành io.js: [v2.3.4](https://iojs.org/d
 #### 1.8.4
 
 **Phát hành bảo trì**
+
 * **openssl**: Cập nhật lên 1.0.2d, sửa lỗi CVE-2015-1793 (Alternate Chains Certificate Forgery) [#2141](https://github.com/nodejs/io.js/pull/2141).
 
 #### 2.3.4
@@ -31,7 +32,7 @@ Tuần này chúng ta có 2 bản phát hành io.js: [v2.3.4](https://iojs.org/d
 Xem đầy đủ các lỗi được biết đến hiện nay tại
 https://github.com/nodejs/io.js/labels/confirmed-bug.
 
-* Một vài vấn đề với unreferenced timers chạy trong  `beforeExit` vẫn đang được giải quyết. Xem tại [#1264](https://github.com/nodejs/io.js/issues/1264).
+* Một vài vấn đề với unreferenced timers chạy trong `beforeExit` vẫn đang được giải quyết. Xem tại [#1264](https://github.com/nodejs/io.js/issues/1264).
 * Surrogate pair trong REPL có thể làm treo terminal [#690](https://github.com/iojs/io.js/issues/690)
 * `process.send()` không đồng bộ như trong tài liệu đề cập, đã được thông báo trong 1.0.2, Xem [#760](https://github.com/iojs/io.js/issues/760) để biết thông tin chi tiết
 * Gọi `dns.setServers()`  khi 1 truy vấn DNS đang được sử lý trong progress có thể khiến process bị crash với 1 failed assertion [#894](https://github.com/iojs/io.js/issues/894)
@@ -39,9 +40,9 @@ https://github.com/nodejs/io.js/labels/confirmed-bug.
 
 ### Cập nhật từ cộng đồng
 
-* OpenSSL thông báo 1 [vấn đề bảo mật quan trọng] (https://mta.openssl.org/pipermail/openssl-announce/2015-July/000037.html), io.js và Node.js đã vừa cập nhật OpenSSL và sửa lỗi đó.
+* OpenSSL thông báo 1 [vấn đề bảo mật quan trọng](https://mta.openssl.org/pipermail/openssl-announce/2015-July/000037.html), io.js và Node.js đã vừa cập nhật OpenSSL và sửa lỗi đó.
 * Node.js LTS WG vừa cập nhật bản[ đề xuất kế hoạch của họ về LTS](https://github.com/nodejs/LTS/blob/master/README.md#example). Họ cần 1 vài phải hồi từ người dùng Node.
-* ReactNative đã thêm io.js như là [nền tảng test của họ] (https://github.com/facebook/react-native/blob/master/.travis.yml#L24).
+* ReactNative đã thêm io.js như là [nền tảng test của họ](https://github.com/facebook/react-native/blob/master/.travis.yml#L24).
 
 ### Sự kiện sắp diễn ra
 
