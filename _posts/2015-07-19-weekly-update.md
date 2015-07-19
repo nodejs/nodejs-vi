@@ -1,9 +1,9 @@
 ---
 layout: post
-title: weekly update 2015-07-19
+title: weekly update 2015-07-10
 categories: [weekly]
 tags: [weekly, draft]
-description: weekly update 2015-07-19
+description: weekly update 2015-07-10
 ---
 
 ### Các tin tức mới về io.js và Node.js - 10/07
