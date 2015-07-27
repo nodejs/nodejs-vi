@@ -2,7 +2,7 @@
 layout: post
 title: weekly update 2015-07-03
 categories: [weekly]
-tags: [weekly, draft]
+tags: [weekly, publish]
 description: weekly update 2015-07-03
 ---
 
